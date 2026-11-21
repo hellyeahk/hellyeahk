@@ -14,6 +14,17 @@
 <img src="./assets/manifesto.svg" alt="Manifesto: building interactive visual playgrounds, generative art and tactile web interfaces." width="100%"/>
 </div>
 
+```text
++--------------------------------------------------------------+
+|  HANDLE      @hellyeahk                                      |
+|  DISCIPLINE  creative media & front-end                      |
+|  OBSESSION   interactive canvas, visual web experiments      |
+|  MEDIUM      HTML5 / JS / 60FPS, generative art, UI          |
+|  ARCHIVE     curated github pages, procedural flora          |
+|  CONTACT     telegram @YUFANZUAO                             |
++--------------------------------------------------------------+
+```
+
 <br/>
 
 <img src="./assets/section-stack.svg" alt="02 stack" width="100%"/>
@@ -24,25 +35,63 @@
 
 <br/>
 
-<img src="./assets/section-archive.svg" alt="03 archive" width="100%"/>
+<img src="./assets/section-lab.svg" alt="03 visual lab and experiments" width="100%"/>
 
-<!--
-  GANTI baris di bawah dengan proyekmu sendiri.
-  Salin satu baris tabel untuk menambah entri baru.
--->
+<!-- ============ EXP.001 — FEATURED ============ -->
+<table width="100%">
+<tr>
+<td width="60%" valign="top">
+  <img src="./assets/exp-001.svg" alt="Experiment 001: generative simulation, live" width="100%"/>
+  <a href="https://hellyeahk.github.io/red-roses/">
+    <img src="./assets/red-roses.gif" alt="Red roses interactive simulation. Click to launch." width="100%"/>
+  </a>
+</td>
+<td width="40%" valign="top">
+  <br/>
+  <h2>red roses.</h2>
+  <p>
+    Real-time procedural bloom simulation exploring organic layering,
+    custom easing transitions, and dynamic light gradients on HTML5 Canvas.
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/-HTML5%20CANVAS-87100F?style=flat-square" alt="HTML5 Canvas"/>
+    <img src="https://img.shields.io/badge/-JAVASCRIPT-87100F?style=flat-square" alt="JavaScript"/>
+    <img src="https://img.shields.io/badge/-CSS3-87100F?style=flat-square" alt="CSS3"/>
+  </p>
+  <p>
+    <a href="https://hellyeahk.github.io/red-roses/"><strong>↗&nbsp;LAUNCH EXPERIMENT</strong></a><br/>
+    <sub><a href="https://github.com/hellyeahk/red-roses">inspect source →</a></sub>
+  </p>
+</td>
+</tr>
+</table>
 
-| NO. | PAGE | MEDIUM | LINK |
-|:---:|:-----|:-------|:----:|
-| **001** | **PROCEDURAL FLORA** — plants that grow themselves, drawn on canvas | HTML5 canvas · JS | [**OPEN ↗**](https://hellyeahk.github.io/) |
-| **002** | **NAMA_PROYEK** — satu kalimat tegas tentang apa ini | TECH · TECH | [**OPEN ↗**](https://hellyeahk.github.io/) |
-| **003** | **NAMA_PROYEK** — satu kalimat tegas tentang apa ini | TECH · TECH | [**OPEN ↗**](https://hellyeahk.github.io/) |
-| **004** | **NAMA_PROYEK** — satu kalimat tegas tentang apa ini | TECH · TECH | [**OPEN ↗**](https://hellyeahk.github.io/) |
-
-<div align="right">
-
-**[ ALL REPOSITORIES → ](https://github.com/hellyeahk?tab=repositories)**
-
-</div>
+<!-- ============ EXP.002 + EXP.003 ============ -->
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+  <img src="./assets/exp-002.svg" alt="Experiment 002: interactive study, in progress" width="100%"/>
+  <h3>stylized terrarium &amp; virtual companion.</h3>
+  <p>2D canvas state machine and tactile micro-interactions.</p>
+  <p>
+    <img src="https://img.shields.io/badge/-CANVAS-87100F?style=flat-square" alt="Canvas"/>
+    <img src="https://img.shields.io/badge/-STATE%20MACHINE-87100F?style=flat-square" alt="State machine"/>
+    <img src="https://img.shields.io/badge/-MICRO--INTERACTIONS-87100F?style=flat-square" alt="Micro-interactions"/>
+  </p>
+</td>
+<td width="50%" valign="top">
+  <img src="./assets/exp-003.svg" alt="Experiment 003: kinetic interface, index" width="100%"/>
+  <h3>motion &amp; spatial web prototypes.</h3>
+  <p>Custom easing curves, shaders and interactive layouts.</p>
+  <p>
+    <img src="https://img.shields.io/badge/-EASING-87100F?style=flat-square" alt="Easing"/>
+    <img src="https://img.shields.io/badge/-SHADERS-87100F?style=flat-square" alt="Shaders"/>
+    <img src="https://img.shields.io/badge/-LAYOUTS-87100F?style=flat-square" alt="Layouts"/>
+  </p>
+  <p><a href="https://github.com/hellyeahk?tab=repositories"><strong>↗&nbsp;BROWSE INDEX</strong></a></p>
+</td>
+</tr>
+</table>
 
 <br/>
 
