@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="436.73" viewBox="0 0 360 436.73" role="img" aria-label="flora: a growing series of interactive flower studies. Open flora folder.">
+  <svg x="0" y="0" width="360" height="44" viewBox="0 0 360 44">
+  <defs>
+    <radialGradient id="u_d1" cx="30%" cy="40%" r="90%"><stop offset="0" stop-color="#2A0505"/><stop offset="1" stop-color="#140202"/></radialGradient>
+    <clipPath id="u_p1"><rect width="360" height="44" rx="6"/></clipPath>
+  </defs>
+  <g clip-path="url(#u_p1)">
+    <rect width="360" height="44" fill="url(#u_d1)"/>
+    <text x="16" y="27" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" letter-spacing="0.6" fill="#F5EFE6">flora/</text>
+    <text x="68" y="27" font-family="'Courier New', Courier, monospace" font-size="12" letter-spacing="0.6" fill="#F5EFE6" fill-opacity="0.6">// index of 6 works</text>
+    <g stroke="#E63946" stroke-width="3" stroke-linecap="square" fill="none"><line x1="326" y1="29" x2="340" y2="15"/><polyline points="328.4,15 340,15 340,26.6"/></g>
+  </g>
+  <rect x="0.75" y="0.75" width="358.5" height="42.5" rx="6" fill="none" stroke="#87100F" stroke-width="1.5"/>
+</svg>
+  <svg x="0" y="50" width="360" height="386.73" viewBox="0 0 360 386.73">
+  <defs>
+    <radialGradient id="d_d2" cx="30%" cy="40%" r="90%"><stop offset="0" stop-color="#2A0505"/><stop offset="1" stop-color="#140202"/></radialGradient>
+    <clipPath id="d_p2"><rect width="360" height="386.73" rx="6"/></clipPath>
+  </defs>
+  <g clip-path="url(#d_p2)">
+    <rect width="360" height="386.73" fill="url(#d_d2)"/>
+    <text x="24" y="38" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" letter-spacing="2" fill="#E63946">[ 001 // BOTANICAL SERIES ]</text>
+    <text x="22" y="108" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="-3" fill="#F5EFE6">flora.</text>
+    <g font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F5EFE6" fill-opacity="0.8" letter-spacing="-0.1">
+      <text x="24" y="142">A growing series of interactive flower</text>
+      <text x="24" y="162">studies, each one with its own repo</text>
+      <text x="24" y="182">and live demo. More blooms to come.</text>
+    </g>
+    <line x1="24" y1="200" x2="336" y2="200" stroke="#F5EFE6" stroke-opacity="0.2"/>
+    <text x="24" y="224" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" fill="#E63946">01</text><text x="46" y="224" font-family="'Courier New', Courier, monospace" font-size="11" fill="#F5EFE6" fill-opacity="0.88">red-roses</text><text x="24" y="244" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" fill="#E63946">02</text><text x="46" y="244" font-family="'Courier New', Courier, monospace" font-size="11" fill="#F5EFE6" fill-opacity="0.88">lotus</text><text x="24" y="264" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" fill="#E63946">03</text><text x="46" y="264" font-family="'Courier New', Courier, monospace" font-size="11" fill="#F5EFE6" fill-opacity="0.88">blooming-flower</text><text x="188" y="224" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" fill="#E63946">04</text><text x="210" y="224" font-family="'Courier New', Courier, monospace" font-size="11" fill="#F5EFE6" fill-opacity="0.88">edelweiss</text><text x="188" y="244" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" fill="#E63946">05</text><text x="210" y="244" font-family="'Courier New', Courier, monospace" font-size="11" fill="#F5EFE6" fill-opacity="0.88">stargazer-lily</text><text x="188" y="264" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" fill="#E63946">06</text><text x="210" y="264" font-family="'Courier New', Courier, monospace" font-size="11" fill="#F5EFE6" fill-opacity="0.88">higanbana</text>
+    <rect x="24" y="280" width="97.2" height="24" fill="none" stroke="#F5EFE6" stroke-opacity="0.8" stroke-width="1.2"/><text x="72.6" y="295.6" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="10" font-weight="700" letter-spacing="0.6" fill="#F5EFE6">HTML5 CANVAS</text><rect x="129.2" y="280" width="84.0" height="24" fill="none" stroke="#F5EFE6" stroke-opacity="0.8" stroke-width="1.2"/><text x="171.2" y="295.6" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="10" font-weight="700" letter-spacing="0.6" fill="#F5EFE6">JAVASCRIPT</text><rect x="221.2" y="280" width="44.4" height="24" fill="none" stroke="#F5EFE6" stroke-opacity="0.8" stroke-width="1.2"/><text x="243.4" y="295.6" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="10" font-weight="700" letter-spacing="0.6" fill="#F5EFE6">CSS3</text>
+    <rect x="24" y="316.73" width="312" height="46" fill="#F5EFE6"/>
+    <text x="40" y="346.73" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="0.4" fill="#7A0E0D">OPEN FLORA FOLDER</text>
+    <g stroke="#7A0E0D" stroke-width="3" stroke-linecap="square" fill="none"><line x1="300" y1="344.73" x2="316" y2="328.73"/><polyline points="302.4,328.73 316,328.73 316,342.33000000000004"/></g>
+  </g>
+  <rect x="0.75" y="0.75" width="358.5" height="385.23" rx="6" fill="none" stroke="#87100F" stroke-width="1.5"/>
+</svg>
+</svg>

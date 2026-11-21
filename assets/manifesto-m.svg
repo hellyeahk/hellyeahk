@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="552" viewBox="0 0 400 552" role="img" aria-label="Manifesto: building interactive visual playgrounds, generative art and tactile web interfaces. Explorations: interactive canvas, 2D/3D simulation, shaders, generative art, kinetic UI, motion systems. Arsenal: JS, TS, Three.js, Vue, React, Processing, After Effects.">
+  <defs>
+    <radialGradient id="mb" cx="30%" cy="30%" r="90%"><stop offset="0" stop-color="#2A0505"/><stop offset="1" stop-color="#140202"/></radialGradient>
+    <clipPath id="mc"><rect width="400" height="552" rx="12"/></clipPath>
+  </defs>
+  <g clip-path="url(#mc)">
+    <rect width="400" height="552" fill="url(#mb)"/>
+    <g stroke="#F5EFE6" stroke-opacity="0.14"><line x1="0" y1="44" x2="400" y2="44"/><line x1="24" y1="326" x2="376" y2="326"/><line x1="24" y1="450" x2="376" y2="450"/></g>
+    <text x="24" y="28" font-family="'Courier New', Courier, monospace" font-size="11.5" font-weight="700" letter-spacing="2" fill="#E63946">[01 // MANIFESTO]</text>
+    <g font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-weight="800" font-size="33" letter-spacing="-1.4" fill="#F5EFE6">
+      <text x="24" y="92">building interactive</text>
+      <text x="24" y="130">visual playgrounds,</text>
+      <text x="24" y="168">generative art</text>
+      <text x="24" y="206">&amp; tactile web</text>
+      <text x="24" y="244">interfaces.</text>
+    </g>
+    <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="14" fill="#F5EFE6" fill-opacity="0.75">
+      <text x="24" y="284">“I’d rather spend an hour on an easing curve</text>
+      <text x="24" y="304">than skip it.”</text>
+    </g>
+    <text x="24" y="356" font-family="'Courier New', Courier, monospace" font-size="11.5" font-weight="700" letter-spacing="2" fill="#E63946">[02 // EXPLORATIONS]</text>
+    <g font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="-0.3" fill="#F5EFE6">
+      <text x="24" y="386">Interactive Canvas · 2D/3D Simulation</text>
+      <text x="24" y="410" fill-opacity="0.82">Shaders · Generative Art</text>
+      <text x="24" y="434" fill-opacity="0.82">Kinetic UI · Motion Systems</text>
+    </g>
+    <text x="24" y="480" font-family="'Courier New', Courier, monospace" font-size="11.5" font-weight="700" letter-spacing="2" fill="#E63946">[03 // ARSENAL]</text>
+    <g font-family="'Courier New', Courier, monospace" font-size="13.5" font-weight="700" letter-spacing="1" fill="#F5EFE6" fill-opacity="0.9">
+      <text x="24" y="508">JS / TS · THREE.JS · VUE</text>
+      <text x="24" y="530">REACT · PROCESSING · AE</text>
+    </g>
+  </g>
+  <rect x="0.75" y="0.75" width="398.5" height="550.5" rx="12" fill="none" stroke="#87100F" stroke-width="1.5"/>
+</svg>

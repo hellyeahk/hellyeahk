@@ -197,6 +197,82 @@ def write_langs(d, updated):
         f.write(svg)
 
 
+
+def _m_card(x, y, w, h, kind, label, value, sub, fs):
+    fill = {"crimson": "url(#crimsonCard)", "dark": "url(#darkCard)", "cream": CREAM}[kind]
+    stroke = {"crimson": RED, "dark": "#5C0908", "cream": CREAM}[kind]
+    tc = RED if kind == "cream" else CREAM
+    lc = RED if kind == "cream" else (ACC if kind == "dark" else CREAM)
+    sc = DEEP if kind == "cream" else CREAM
+    so = "1" if kind == "cream" else "0.7"
+    return f"""  <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="{fill}" stroke="{stroke}" stroke-width="1.5"/>
+  <text x="{x + 18}" y="{y + 28}" font-family="{FM}" font-size="11.5" font-weight="700" letter-spacing="1.4" fill="{lc}">{esc(label)}</text>
+  <text x="{x + 16}" y="{y + h - 36}" font-family="{FH}" font-size="{fs}" font-weight="900" letter-spacing="{-fs * 0.045:.1f}" fill="{tc}">{esc(value)}</text>
+  <text x="{x + 18}" y="{y + h - 14}" font-family="{FM}" font-size="10.5" letter-spacing="1" fill="{sc}" fill-opacity="{so}">{esc(sub)}</text>
+"""
+
+
+def write_metrics_m(d):
+    """phone layout: one column of bigger tiles, 400 units wide"""
+    top = d["langs"][0][0].upper() if d["langs"] else "—"
+    top_fs = max(18, min(30, int(150 / (max(len(top), 1) * 0.66))))
+    W, H = 400, 478
+    body = "".join([
+        _m_card(4, 4, 392, 128, "crimson", "[ CONTRIBUTIONS ]", num(d["total"]), "LAST 12 MONTHS // ALL ACTIVITY", 72),
+        _m_card(4, 142, 192, 112, "dark", "CURRENT STREAK", num(d["cur"]), "DAYS IN A ROW", 56),
+        _m_card(204, 142, 192, 112, "cream", "LONGEST STREAK", num(d["longest"]), "DAYS // 12 MONTHS", 56),
+        _m_card(4, 264, 192, 100, "dark", "PUBLIC REPOS", num(d["repos"]), "NON-FORK", 46),
+        _m_card(204, 264, 192, 100, "crimson", "TOTAL STARS", num(d["stars"]), "PUBLIC REPOS", 46),
+        _m_card(4, 374, 192, 100, "dark", "FOLLOWERS", num(d["followers"]), "ON GITHUB", 46),
+        _m_card(204, 374, 192, 100, "cream", "TOP LANGUAGE", top, "MOST CODE WRITTEN", top_fs),
+    ])
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="GitHub activity metrics">
+  <defs>
+    <radialGradient id="crimsonCard" cx="30%" cy="30%" r="85%"><stop offset="0%" stop-color="#A81918"/><stop offset="100%" stop-color="#620A09"/></radialGradient>
+    <radialGradient id="darkCard" cx="50%" cy="50%" r="85%"><stop offset="0%" stop-color="#240404"/><stop offset="100%" stop-color="#120202"/></radialGradient>
+  </defs>
+{body}</svg>
+"""
+    with open(os.path.join(OUT, "stats-metrics-m.svg"), "w", encoding="utf-8") as f:
+        f.write(svg)
+
+
+def write_langs_m(d, updated):
+    """phone layout: bar + one language per row"""
+    langs = d["langs"]
+    W = 400
+    rows = max(len(langs), 1)
+    H = 92 + rows * 30 + 34
+    parts = []
+    if not langs:
+        parts.append(f'<text x="20" y="96" font-family="{FM}" font-size="12.5" fill="{CREAM}" fill-opacity="0.7">NO LANGUAGE DATA YET</text>')
+    else:
+        x, bw, gap = 20, W - 40, 2
+        usable = bw - gap * (len(langs) - 1)
+        for i, (name, pct) in enumerate(langs):
+            sw = max(usable * pct / 100, 3)
+            col = "#8A7D70" if name == "Other" else SEG[i % len(SEG)]
+            parts.append(f'<rect x="{x:.1f}" y="54" width="{sw:.1f}" height="20" fill="{col}"/>')
+            x += sw + gap
+        for i, (name, pct) in enumerate(langs):
+            col = "#8A7D70" if name == "Other" else SEG[i % len(SEG)]
+            y = 98 + i * 30
+            parts.append(f'<rect x="20" y="{y}" width="14" height="14" fill="{col}" stroke="{CREAM}" stroke-opacity="0.4"/>'
+                         f'<text x="44" y="{y + 12}" font-family="{FM}" font-size="13" font-weight="700" letter-spacing="1" fill="{CREAM}">{esc(name.upper())}</text>'
+                         f'<text x="{W - 20}" y="{y + 12}" text-anchor="end" font-family="{FM}" font-size="13" font-weight="700" letter-spacing="1" fill="{CREAM}" fill-opacity="0.8">{pct:.1f}%</text>')
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Top languages by code size">
+  <defs><radialGradient id="langBg" cx="50%" cy="50%" r="85%"><stop offset="0%" stop-color="#240404"/><stop offset="100%" stop-color="#120202"/></radialGradient></defs>
+  <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="12" fill="url(#langBg)" stroke="#5C0908" stroke-width="1.5"/>
+  <text x="20" y="34" font-family="{FM}" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="{ACC}">TOP LANGUAGES // BY CODE SIZE</text>
+{chr(10).join(parts)}
+  <line x1="1" y1="{H - 28}" x2="{W - 1}" y2="{H - 28}" stroke="{CREAM}" stroke-opacity="0.14"/>
+  <text x="20" y="{H - 10}" font-family="{FM}" font-size="10" letter-spacing="1.2" fill="{CREAM}" fill-opacity="0.5">UPDATED {updated} UTC</text>
+</svg>
+"""
+    with open(os.path.join(OUT, "stats-langs-m.svg"), "w", encoding="utf-8") as f:
+        f.write(svg)
+
+
 def wrap_snake(src_name, dst_name, is_dark=True):
     src_path = os.path.join(OUT, src_name)
     if not os.path.exists(src_path):
@@ -258,6 +334,8 @@ def main():
     updated = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")
     write_metrics(d)
     write_langs(d, updated)
+    write_metrics_m(d)
+    write_langs_m(d, updated)
     wrap_snake("snake-dark.svg", "snake-framed-dark.svg", is_dark=True)
     wrap_snake("snake-light.svg", "snake-framed-light.svg", is_dark=False)
     print("All framed stats and snakes written to", OUT)

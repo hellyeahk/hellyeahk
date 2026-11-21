@@ -7,7 +7,10 @@
 <br/>
 
 <img src="assets/section-about.svg" alt="01 about" width="100%" />
-<img src="assets/manifesto.svg" alt="building interactive visual playgrounds, generative art and tactile web interfaces" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/manifesto-m.svg" />
+  <img src="assets/manifesto.svg" alt="building interactive visual playgrounds, generative art and tactile web interfaces" width="100%" />
+</picture>
 
 <p align="center">
   <b>Jeremiah Hawthorne</b> · interactive canvas &amp; visual web experiments.<br/>
@@ -18,107 +21,43 @@
 
 <img src="assets/section-lab.svg" alt="02 lab, visual experiments" width="100%" />
 
-<!-- ROW 1: EXP.001 Hero Compilation -->
-<table width="100%">
-  <tr>
-    <td width="62%" valign="top">
-      <a>
-        <img src="assets/exp-001.svg" alt="EXP.001, flora, botanical series, 6 works" width="100%" />
-      </a>
-      <a>
-        <img src="assets/compilation.gif" alt="flora cover: compilation of interactive flower studies" width="100%" />
-      </a>
-    </td>
-    <td width="38%" valign="top">
-      <a>
-        <img src="assets/lab-url.svg" alt="flora folder index" width="100%" />
-      </a>
-      <a href="https://github.com/hellyeahk/hellyeahk/blob/main/flora/README.md">
-        <img src="assets/lab-desc.svg" alt="flora: a growing series of interactive flower studies." width="100%" />
-      </a>
-    </td>
-  </tr>
-</table>
+<!--
+  Responsive layout without CSS: every tile is ONE image with a fixed pixel width.
+  On a laptop they sit side by side; on a phone they wrap to one per row.
+  Keep the sum of widths on a row under ~800.
+-->
+<div align="center">
 
-<!-- ROW 2: Direct Live Demo Gallery (3x2 Grid) -->
-<table width="100%">
-  <tr>
-    <td width="33.3%" valign="top">
-      <a href="https://hellyeahk.github.io/red-roses/"><img src="assets/flora-head-01.svg" alt="01 roses" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/red-roses/"><img src="assets/red-roses.gif" alt="01 roses: live preview" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/red-roses/"><img src="assets/flora-demo-btn.svg" alt="open live demo" width="100%" /></a>
-      <a href="https://github.com/hellyeahk/red-roses"><img src="assets/flora-src-01.svg" alt="01 roses: source code" width="100%" /></a>
-    </td>
-    <td width="33.3%" valign="top">
-      <a href="https://hellyeahk.github.io/lotus/"><img src="assets/flora-head-02.svg" alt="02 lotus" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/lotus/"><img src="assets/lotus.gif" alt="02 lotus: live preview" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/lotus/"><img src="assets/flora-demo-btn.svg" alt="open live demo" width="100%" /></a>
-      <a href="https://github.com/hellyeahk/lotus"><img src="assets/flora-src-02.svg" alt="02 lotus: source code" width="100%" /></a>
-    </td>
-    <td width="33.3%" valign="top">
-      <a href="https://hellyeahk.github.io/blooming-flower/"><img src="assets/flora-head-03.svg" alt="03 blooming flower" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/blooming-flower/"><img src="assets/blooming-flower.gif" alt="03 blooming flower: live preview" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/blooming-flower/"><img src="assets/flora-demo-btn.svg" alt="open live demo" width="100%" /></a>
-      <a href="https://github.com/hellyeahk/blooming-flower"><img src="assets/flora-src-03.svg" alt="03 blooming flower: source code" width="100%" /></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="33.3%" valign="top">
-      <a href="https://hellyeahk.github.io/edelweiss/"><img src="assets/flora-head-04.svg" alt="04 edelweiss" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/edelweiss/"><img src="assets/edelweiss.gif" alt="04 edelweiss: live preview" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/edelweiss/"><img src="assets/flora-demo-btn.svg" alt="open live demo" width="100%" /></a>
-      <a href="https://github.com/hellyeahk/edelweiss"><img src="assets/flora-src-04.svg" alt="04 edelweiss: source code" width="100%" /></a>
-    </td>
-    <td width="33.3%" valign="top">
-      <a href="https://hellyeahk.github.io/stargazer-lily/"><img src="assets/flora-head-05.svg" alt="05 stargazer lily" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/stargazer-lily/"><img src="assets/stargazer-lily.gif" alt="05 stargazer lily: live preview" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/stargazer-lily/"><img src="assets/flora-demo-btn.svg" alt="open live demo" width="100%" /></a>
-      <a href="https://github.com/hellyeahk/stargazer-lily"><img src="assets/flora-src-05.svg" alt="05 stargazer lily: source code" width="100%" /></a>
-    </td>
-    <td width="33.3%" valign="top">
-      <a href="https://hellyeahk.github.io/higanbana/"><img src="assets/flora-head-06.svg" alt="06 higanbana" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/higanbana/"><img src="assets/higanbana.gif" alt="06 higanbana: live preview" width="100%" /></a>
-      <a href="https://hellyeahk.github.io/higanbana/"><img src="assets/flora-demo-btn.svg" alt="open live demo" width="100%" /></a>
-      <a href="https://github.com/hellyeahk/higanbana"><img src="assets/flora-src-06.svg" alt="06 higanbana: source code" width="100%" /></a>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora"><img src="assets/hero-card.svg" alt="EXP.001 flora: compilation of interactive flower studies, 6 works" width="520" /></a>
+<a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora"><img src="assets/hero-side.svg" alt="flora: a growing series of interactive flower studies. Open flora folder." width="272" /></a>
 
-<!-- ROW 3: Planned / Next Slots -->
-<table width="100%">
-  <tr>
-    <td width="33.3%" valign="top">
-      <img src="assets/lab-002.svg" alt="EXP.002 planned: stylized terrarium and virtual companion" width="100%" />
-    </td>
-    <td width="33.3%" valign="top">
-      <img src="assets/lab-003.svg" alt="EXP.003 planned: motion and spatial web prototypes" width="100%" />
-    </td>
-    <td width="33.3%" valign="top">
-      <img src="assets/lab-004.svg" alt="EXP.004 next up: slot open" width="100%" />
-    </td>
-  </tr>
-</table>
+<a href="https://hellyeahk.github.io/red-roses/"><img src="assets/flora-card-01.svg" alt="01 roses: live preview. Open live demo." width="264" /></a>
+<a href="https://hellyeahk.github.io/lotus/"><img src="assets/flora-card-02.svg" alt="02 lotus: live preview. Open live demo." width="264" /></a>
+<a href="https://hellyeahk.github.io/blooming-flower/"><img src="assets/flora-card-03.svg" alt="03 blooming flower: live preview. Open live demo." width="264" /></a>
+<a href="https://hellyeahk.github.io/edelweiss/"><img src="assets/flora-card-04.svg" alt="04 edelweiss: live preview. Open live demo." width="264" /></a>
+<a href="https://hellyeahk.github.io/stargazer-lily/"><img src="assets/flora-card-05.svg" alt="05 stargazer lily: live preview. Open live demo." width="264" /></a>
+<a href="https://hellyeahk.github.io/higanbana/"><img src="assets/flora-card-06.svg" alt="06 higanbana: live preview. Open live demo." width="264" /></a>
 
-<!-- ROW 4: Browse Links -->
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora">
-        <img src="assets/lab-flora-repos.svg" alt="browse all repositories tagged flora" width="100%" />
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/hellyeahk?tab=repositories">
-        <img src="assets/lab-all.svg" alt="all experiments: browse every repo" width="100%" />
-      </a>
-    </td>
-  </tr>
-</table>
+<sub><b>SOURCE →</b> <a href="https://github.com/hellyeahk/red-roses">red-roses</a> · <a href="https://github.com/hellyeahk/lotus">lotus</a> · <a href="https://github.com/hellyeahk/blooming-flower">blooming-flower</a> · <a href="https://github.com/hellyeahk/edelweiss">edelweiss</a> · <a href="https://github.com/hellyeahk/stargazer-lily">stargazer-lily</a> · <a href="https://github.com/hellyeahk/higanbana">higanbana</a></sub>
+
+<br/><br/>
+
+<img src="assets/lab-002.svg" alt="EXP.002 planned: stylized terrarium and virtual companion" width="264" />
+<img src="assets/lab-003.svg" alt="EXP.003 planned: motion and spatial web prototypes" width="264" />
+<img src="assets/lab-004.svg" alt="EXP.004 next up: slot open" width="240" />
+
+<a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora"><img src="assets/lab-flora-repos.svg" alt="browse all repositories tagged flora" width="390" /></a>
+<a href="https://github.com/hellyeahk?tab=repositories"><img src="assets/lab-all.svg" alt="all experiments: browse every repo" width="390" /></a>
+
+</div>
 
 <br/>
 
 <img src="assets/section-stack.svg" alt="03 stack, toolkit" width="100%" />
-<img src="assets/stack.svg" alt="tooling: HTML5, CSS3, JavaScript, TypeScript, Canvas API, Three.js, shaders, Processing, Vue 3, React, Tailwind, After Effects" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/stack-m.svg" />
+  <img src="assets/stack.svg" alt="tooling: HTML5, CSS3, JavaScript, TypeScript, Canvas API, Three.js, shaders, Processing, Vue 3, React, Tailwind, After Effects" width="100%" />
+</picture>
 
 <br/>
 
@@ -130,8 +69,14 @@
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-framed-light.svg" />
     <img alt="contribution snake" src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-framed-dark.svg" width="100%" />
   </picture>
+  <picture>
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-metrics-m.svg" />
   <img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-metrics.svg" alt="GitHub activity: contributions, streaks, public repos, stars, followers, top language" width="100%" />
+</picture>
+  <picture>
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-langs-m.svg" />
   <img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-langs.svg" alt="top languages by code written" width="100%" />
+</picture>
 </div>
 
 <br/>
