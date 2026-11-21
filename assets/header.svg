@@ -1,0 +1,80 @@
+<svg width="1000" height="260" viewBox="0 0 1000 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes fadeSlideUp {
+      0% { opacity: 0; transform: translateY(14px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes expandLine {
+      0% { stroke-dashoffset: 908; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.25; }
+    }
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 46px;
+      letter-spacing: -1.2px;
+      fill: #F4F4F5;
+      animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .subtitle {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      fill: #A1A1AA;
+      opacity: 0;
+      animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    }
+    .tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      fill: #E4E4E7;
+      opacity: 0;
+      animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
+    }
+    .divider {
+      stroke: #27272A;
+      stroke-width: 1;
+      stroke-dasharray: 908;
+      stroke-dashoffset: 908;
+      animation: expandLine 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+    }
+    .accent-dot {
+      fill: #F43F5E;
+      animation: pulseDot 2.4s ease-in-out infinite;
+    }
+  </style>
+
+  
+  <rect x="1" y="1" width="998" height="258" rx="16" fill="#0D1117" stroke="#21262D" stroke-width="1.5" />
+
+  
+  <line x1="760" y1="1" x2="760" y2="259" stroke="#161B22" stroke-width="1" />
+  <line x1="880" y1="1" x2="880" y2="259" stroke="#161B22" stroke-width="1" />
+
+  
+  <circle cx="48" cy="46" r="4.5" class="accent-dot" />
+  <text x="64" y="50" class="subtitle">CREATIVE MEDIA • GENERATIVE WEB • FRONT-END</text>
+
+  
+  <text x="46" y="122" class="title">Jeremiah Hawthorne</text>
+
+  
+  <line x1="46" y1="156" x2="954" y2="156" class="divider" />
+
+  
+  <text x="46" y="198" class="tag">CURATED GITHUB PAGES ARCHIVE  //  @hellyeahk  •  TG: @yufanzuao</text>
+  <text x="46" y="220" class="subtitle" style="font-size: 12px;">Interactive Canvas &amp; Visual Web Experiments</text>
+
+  
+  <g transform="translate(880, 92)" stroke="#30363D" stroke-width="1.2" fill="none">
+    <ellipse cx="0" cy="0" rx="42" ry="14" transform="rotate(0)" />
+    <ellipse cx="0" cy="0" rx="42" ry="14" transform="rotate(45)" />
+    <ellipse cx="0" cy="0" rx="42" ry="14" transform="rotate(90)" />
+    <ellipse cx="0" cy="0" rx="42" ry="14" transform="rotate(135)" />
+    <circle cx="0" cy="0" r="6" fill="#F43F5E" stroke="none" />
+  </g>
+</svg>
