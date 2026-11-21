@@ -25,31 +25,31 @@
     <text x="518" y="48" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">03 / LANGUAGE</text>
     <text x="518" y="79" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">JAVASCRIPT</text>
     <rect x="741" y="30" width="223" height="64" fill="#2A0505" fill-opacity="0.55" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="753" y="48" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">04 / GRAPHICS</text>
-    <text x="753" y="79" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">CANVAS API</text>
+    <text x="753" y="48" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">04 / LANGUAGE</text>
+    <text x="753" y="79" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">TYPESCRIPT</text>
     <rect x="36" y="106" width="223" height="64" fill="#2A0505" fill-opacity="0.55" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="48" y="124" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">05 / FRAMEWORK</text>
-    <text x="48" y="155" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">VUE 3</text>
+    <text x="48" y="124" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">05 / 2D GRAPHICS</text>
+    <text x="48" y="155" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">CANVAS API</text>
     <rect x="271" y="106" width="223" height="64" fill="#F5EFE6" fill-opacity="1" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="283" y="124" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#7A0E0D" fill-opacity="0.75">06 / UTILITY CSS</text>
-    <text x="283" y="155" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#7A0E0D">TAILWIND</text>
+    <text x="283" y="124" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#7A0E0D" fill-opacity="0.75">06 / 3D / WEBGL</text>
+    <text x="283" y="155" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#7A0E0D">THREE.JS</text>
     <rect x="506" y="106" width="223" height="64" fill="#2A0505" fill-opacity="0.55" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="518" y="124" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">07 / LIBRARY</text>
-    <text x="518" y="155" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">REACT</text>
+    <text x="518" y="124" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">07 / GLSL</text>
+    <text x="518" y="155" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">SHADERS</text>
     <rect x="741" y="106" width="223" height="64" fill="#2A0505" fill-opacity="0.55" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="753" y="124" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">08 / TOOLING</text>
-    <text x="753" y="155" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">VITE</text>
+    <text x="753" y="124" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">08 / CREATIVE CODE</text>
+    <text x="753" y="155" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">PROCESSING</text>
     <rect x="36" y="182" width="223" height="64" fill="#2A0505" fill-opacity="0.55" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="48" y="200" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">09 / UI / UX</text>
-    <text x="48" y="231" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">FIGMA</text>
+    <text x="48" y="200" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">09 / FRAMEWORK</text>
+    <text x="48" y="231" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">VUE 3</text>
     <rect x="271" y="182" width="223" height="64" fill="#2A0505" fill-opacity="0.55" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="283" y="200" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">10 / MOTION</text>
-    <text x="283" y="231" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">AFTER EFFECTS</text>
+    <text x="283" y="200" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">10 / LIBRARY</text>
+    <text x="283" y="231" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">REACT</text>
     <rect x="506" y="182" width="223" height="64" fill="#F5EFE6" fill-opacity="1" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="518" y="200" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#7A0E0D" fill-opacity="0.75">11 / CREATIVE CODE</text>
-    <text x="518" y="231" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#7A0E0D">PROCESSING</text>
+    <text x="518" y="200" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#7A0E0D" fill-opacity="0.75">11 / UTILITY CSS</text>
+    <text x="518" y="231" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#7A0E0D">TAILWIND</text>
     <rect x="741" y="182" width="223" height="64" fill="#2A0505" fill-opacity="0.55" stroke="#F5EFE6" stroke-opacity="0.85" stroke-width="1.5"/>
-    <text x="753" y="200" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">12 / VERSIONING</text>
-    <text x="753" y="231" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">GIT</text>
+    <text x="753" y="200" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.6">12 / MOTION</text>
+    <text x="753" y="231" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#F5EFE6">AFTER EFFECTS</text>
   </g>
 </svg>
