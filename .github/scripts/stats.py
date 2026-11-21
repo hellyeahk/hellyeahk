@@ -1,28 +1,21 @@
 #!/usr/bin/env python3
-"""Generate brutalist GitHub stats tiles (SVG) from the GitHub GraphQL API.
-
-Usage:  python3 stats.py <out_dir>          (needs env GH_TOKEN and LOGIN)
-        python3 stats.py <out_dir> --mock   (sample data, for previewing)
-
-Every tile in a row has the same scale: viewBox width = (percent width in README) * 10.
-"""
+"""Generate brutalist GitHub stats (stats-metrics.svg & stats-langs.svg) from GitHub GraphQL API."""
 import json, os, sys, datetime, urllib.request
 
 OUT = sys.argv[1]
 MOCK = "--mock" in sys.argv
 os.makedirs(OUT, exist_ok=True)
 
-CREAM, RED, ACC, DEEP = "#F5EFE6", "#87100F", "#E63946", "#7A0E0D"
-FH = "'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif"
+CREAM, RED, ACC, DEEP = "#F5EFE6", "#87100F", "#E63946", "#5C0908"
+FH = "'Helvetica Neue', 'Arial Black', Arial, sans-serif"
 FM = "'Courier New', Courier, monospace"
-SEG = ["#F5EFE6", "#E63946", "#B33A39", "#87100F", "#5C0908"]  # language bar palette
+SEG = ["#F5EFE6", "#E63946", "#B33A39", "#87100F", "#5C0908"]
 
 
 def esc(t):
     return str(t).replace("&", "&amp;").replace("<", "&lt;")
 
 
-# ------------------------------------------------------------------ data
 QUERY = """
 query($login:String!){
   user(login:$login){
@@ -61,7 +54,7 @@ def streaks(days):
         run = run + 1 if c > 0 else 0
         longest = max(longest, run)
     tail = counts[:]
-    if tail and tail[-1] == 0:  # today may not have a contribution yet
+    if tail and tail[-1] == 0:
         tail = tail[:-1]
     cur = 0
     for c in reversed(tail):
@@ -98,7 +91,7 @@ def collect():
         if rest > 0.5 and len(ranked) > 5:
             top.append(("Other", rest))
         d["langs"] = top
-    except Exception as e:  # keep going, tiles fall back to dashes
+    except Exception as e:
         print("stats fetch failed:", e, file=sys.stderr)
     return d
 
@@ -107,52 +100,68 @@ def num(v):
     return "—" if v is None else f"{v:,}"
 
 
-# ------------------------------------------------------------------ svg
-def tile(fname, w, h, kind, body, label, uid, rx=6):
-    bg = {"crimson": f"url(#c{uid})", "dark": f"url(#d{uid})", "cream": CREAM}[kind]
-    border = {"crimson": f'stroke="{CREAM}" stroke-opacity="0.35" stroke-width="1.5"',
-              "dark": f'stroke="{RED}" stroke-width="1.5"',
-              "cream": 'stroke="none"'}[kind]
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(label)}">
+def write_metrics(d):
+    top = d["langs"][0][0].upper() if d["langs"] else "—"
+    top_fs = max(18, min(27, int(200 / (max(len(top), 1) * 0.68))))
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="310" viewBox="0 0 1000 310" role="img" aria-label="GitHub Activity Metrics">
   <defs>
-    <radialGradient id="c{uid}" cx="45%" cy="40%" r="90%"><stop offset="0" stop-color="#A81918"/><stop offset="0.65" stop-color="#87100F"/><stop offset="1" stop-color="#5C0908"/></radialGradient>
-    <radialGradient id="d{uid}" cx="30%" cy="40%" r="90%"><stop offset="0" stop-color="#2A0505"/><stop offset="1" stop-color="#140202"/></radialGradient>
-    <clipPath id="p{uid}"><rect width="{w}" height="{h}" rx="{rx}"/></clipPath>
+    <radialGradient id="crimsonCard" cx="30%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#A81918" />
+      <stop offset="100%" stop-color="#620A09" />
+    </radialGradient>
+    <radialGradient id="darkCard" cx="50%" cy="50%" r="85%">
+      <stop offset="0%" stop-color="#240404" />
+      <stop offset="100%" stop-color="#120202" />
+    </radialGradient>
   </defs>
-  <g clip-path="url(#p{uid})">
-    <rect width="{w}" height="{h}" fill="{bg}"/>
-{body}
-  </g>
-  <rect x="0.75" y="0.75" width="{w - 1.5}" height="{h - 1.5}" rx="{rx}" fill="none" {border}/>
+
+  <rect x="1" y="1" width="386" height="168" rx="12" fill="url(#crimsonCard)" stroke="#87100F" stroke-width="1.5" />
+  <text x="24" y="30" font-family="{FM}" font-size="11" font-weight="700" letter-spacing="1.5" fill="{CREAM}" fill-opacity="0.88">[ CONTRIBUTIONS ]</text>
+  <text x="24" y="114" font-family="{FH}" font-size="68" font-weight="900" letter-spacing="-3" fill="{CREAM}">{esc(num(d["total"]))}</text>
+  <text x="24" y="150" font-family="{FM}" font-size="10.5" letter-spacing="1.2" fill="{CREAM}" fill-opacity="0.78">LAST 12 MONTHS // ALL ACTIVITY</text>
+
+  <rect x="397" y="1" width="296" height="168" rx="12" fill="url(#darkCard)" stroke="#5C0908" stroke-width="1.5" />
+  <text x="420" y="30" font-family="{FM}" font-size="11" font-weight="700" letter-spacing="1.5" fill="{ACC}">CURRENT STREAK</text>
+  <text x="420" y="114" font-family="{FH}" font-size="68" font-weight="900" letter-spacing="-3" fill="{CREAM}">{esc(num(d["cur"]))}</text>
+  <text x="420" y="150" font-family="{FM}" font-size="10.5" letter-spacing="1.2" fill="{CREAM}" fill-opacity="0.65">DAYS IN A ROW</text>
+
+  <rect x="703" y="1" width="296" height="168" rx="12" fill="{CREAM}" stroke="{CREAM}" stroke-width="1.5" />
+  <text x="726" y="30" font-family="{FM}" font-size="11" font-weight="700" letter-spacing="1.5" fill="{RED}">LONGEST STREAK</text>
+  <text x="726" y="114" font-family="{FH}" font-size="68" font-weight="900" letter-spacing="-3" fill="{RED}">{esc(num(d["longest"]))}</text>
+  <text x="726" y="150" font-family="{FM}" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="{DEEP}">DAYS // LAST 12 MONTHS</text>
+
+  <rect x="1" y="179" width="242" height="130" rx="12" fill="url(#darkCard)" stroke="#5C0908" stroke-width="1.5" />
+  <text x="20" y="205" font-family="{FM}" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="{ACC}">PUBLIC REPOS</text>
+  <text x="20" y="260" font-family="{FH}" font-size="44" font-weight="900" letter-spacing="-2" fill="{CREAM}">{esc(num(d["repos"]))}</text>
+  <text x="20" y="292" font-family="{FM}" font-size="9.5" letter-spacing="1" fill="{CREAM}" fill-opacity="0.62">ORIGINAL, NON-FORK</text>
+
+  <rect x="253" y="179" width="242" height="130" rx="12" fill="url(#crimsonCard)" stroke="#87100F" stroke-width="1.5" />
+  <text x="272" y="205" font-family="{FM}" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="{CREAM}" fill-opacity="0.88">TOTAL STARS</text>
+  <text x="272" y="260" font-family="{FH}" font-size="44" font-weight="900" letter-spacing="-2" fill="{CREAM}">{esc(num(d["stars"]))}</text>
+  <text x="272" y="292" font-family="{FM}" font-size="9.5" letter-spacing="1" fill="{CREAM}" fill-opacity="0.78">ACROSS PUBLIC REPOS</text>
+
+  <rect x="505" y="179" width="242" height="130" rx="12" fill="url(#darkCard)" stroke="#5C0908" stroke-width="1.5" />
+  <text x="524" y="205" font-family="{FM}" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="{ACC}">FOLLOWERS</text>
+  <text x="524" y="260" font-family="{FH}" font-size="44" font-weight="900" letter-spacing="-2" fill="{CREAM}">{esc(num(d["followers"]))}</text>
+  <text x="524" y="292" font-family="{FM}" font-size="9.5" letter-spacing="1" fill="{CREAM}" fill-opacity="0.62">ON GITHUB</text>
+
+  <rect x="757" y="179" width="242" height="130" rx="12" fill="{CREAM}" stroke="{CREAM}" stroke-width="1.5" />
+  <text x="776" y="205" font-family="{FM}" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="{RED}">TOP LANGUAGE</text>
+  <text x="776" y="254" font-family="{FH}" font-size="{top_fs}" font-weight="900" letter-spacing="-1" fill="{RED}">{esc(top)}</text>
+  <text x="776" y="292" font-family="{FM}" font-size="9.5" font-weight="700" letter-spacing="1" fill="{DEEP}">MOST CODE WRITTEN</text>
 </svg>
 '''
-    with open(os.path.join(OUT, fname), "w", encoding="utf-8") as f:
+    with open(os.path.join(OUT, "stats-metrics.svg"), "w", encoding="utf-8") as f:
         f.write(svg)
 
 
-def big_tile(fname, uid, w, h, kind, label, value, sub, fs):
-    c_text = DEEP if kind == "cream" else CREAM
-    c_lab = DEEP if kind == "cream" else (ACC if kind == "dark" else CREAM)
-    lab_op = "1" if kind != "crimson" else "0.8"
-    small = h < 140
-    ly = 28 if small else 34
-    div = h - (34 if small else 38)
-    vy = div - (13 if small else 14)
-    sy = h - (12 if small else 14)
-    body = f'''
-    <line x1="0" y1="{div}" x2="{w}" y2="{div}" stroke="{c_text}" stroke-opacity="0.18"/>
-    <text x="22" y="{ly}" font-family="{FM}" font-size="11" font-weight="700" letter-spacing="2" fill="{c_lab}" fill-opacity="{lab_op}">{esc(label)}</text>
-    <text x="20" y="{vy}" font-family="{FH}" font-size="{fs}" font-weight="800" letter-spacing="{-fs * 0.045:.1f}" fill="{c_text}">{esc(value)}</text>
-    <text x="22" y="{sy}" font-family="{FM}" font-size="10.5" letter-spacing="1.4" fill="{c_text}" fill-opacity="0.7">{esc(sub)}</text>'''
-    tile(fname, w, h, kind, body, f"{label}: {value}", uid)
-
-
-def langs_tile(d, updated):
-    w, h = 980, 150
+def write_langs(d, updated):
+    w, h = 1000, 150
     langs = d["langs"]
     parts = []
     if not langs:
-        parts.append(f'<text x="22" y="86" font-family="{FM}" font-size="12" fill="{CREAM}" fill-opacity="0.7">NO LANGUAGE DATA YET</text>')
+        parts.append(f'<text x="24" y="86" font-family="{FM}" font-size="12" fill="{CREAM}" fill-opacity="0.7">NO LANGUAGE DATA YET</text>')
     else:
         x, bw, gap = 24, w - 48, 3
         usable = bw - gap * (len(langs) - 1)
@@ -168,38 +177,32 @@ def langs_tile(d, updated):
             parts.append(f'<rect x="{lx}" y="96" width="12" height="12" fill="{col}" stroke="{CREAM}" stroke-opacity="0.4"/>'
                          f'<text x="{lx + 20}" y="106" font-family="{FM}" font-size="11.5" font-weight="700" letter-spacing="0.8" fill="{CREAM}">{esc(label)}</text>')
             lx += 20 + len(label) * 7.6 + 26
-    body = f'''
-    <text x="24" y="34" font-family="{FM}" font-size="11" font-weight="700" letter-spacing="2" fill="{ACC}">TOP LANGUAGES // BY CODE SIZE</text>
-    <text x="{w - 24}" y="34" text-anchor="end" font-family="{FM}" font-size="10" letter-spacing="1.4" fill="{CREAM}" fill-opacity="0.5">UPDATED {updated} UTC</text>
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Top languages by code size">
+  <defs>
+    <radialGradient id="langBg" cx="50%" cy="50%" r="85%">
+      <stop offset="0%" stop-color="#240404" />
+      <stop offset="100%" stop-color="#120202" />
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="12" fill="url(#langBg)" stroke="#5C0908" stroke-width="1.5" />
+  <text x="24" y="34" font-family="{FM}" font-size="11" font-weight="700" letter-spacing="2" fill="{ACC}">TOP LANGUAGES // BY CODE SIZE</text>
+  <text x="{w - 24}" y="34" text-anchor="end" font-family="{FM}" font-size="10" letter-spacing="1.4" fill="{CREAM}" fill-opacity="0.5">UPDATED {updated} UTC</text>
 {chr(10).join(parts)}
-    <line x1="0" y1="{h - 24}" x2="{w}" y2="{h - 24}" stroke="{CREAM}" stroke-opacity="0.14"/>
-    <text x="24" y="{h - 8}" font-family="{FM}" font-size="9.5" letter-spacing="1.6" fill="{CREAM}" fill-opacity="0.45">PUBLIC, NON-FORK REPOSITORIES ONLY</text>'''
-    tile("stats-langs.svg", w, h, "dark", body, "Top languages by code size", 20)
+  <line x1="1" y1="{h - 24}" x2="{w - 1}" y2="{h - 24}" stroke="{CREAM}" stroke-opacity="0.14"/>
+  <text x="24" y="{h - 8}" font-family="{FM}" font-size="9.5" letter-spacing="1.6" fill="{CREAM}" fill-opacity="0.45">PUBLIC, NON-FORK REPOSITORIES ONLY</text>
+</svg>
+'''
+    with open(os.path.join(OUT, "stats-langs.svg"), "w", encoding="utf-8") as f:
+        f.write(svg)
 
 
 def main():
     d = collect()
     updated = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")
-
-    # row 1 (h=176): widths 380 / 300 / 300
-    big_tile("stats-contrib.svg", 11, 380, 176, "crimson", "[ CONTRIBUTIONS ]", num(d["total"]),
-             "LAST 12 MONTHS // ALL ACTIVITY", 86)
-    big_tile("stats-streak.svg", 12, 300, 176, "dark", "CURRENT STREAK", num(d["cur"]),
-             "DAYS IN A ROW", 86)
-    big_tile("stats-longest.svg", 13, 300, 176, "cream", "LONGEST STREAK", num(d["longest"]),
-             "DAYS // LAST 12 MONTHS", 86)
-
-    # row 2 (h=118): four tiles of 240
-    big_tile("stats-repos.svg", 14, 240, 118, "dark", "PUBLIC REPOS", num(d["repos"]), "ORIGINAL, NON-FORK", 44)
-    big_tile("stats-stars.svg", 15, 240, 118, "crimson", "TOTAL STARS", num(d["stars"]), "ACROSS PUBLIC REPOS", 44)
-    big_tile("stats-followers.svg", 16, 240, 118, "dark", "FOLLOWERS", num(d["followers"]), "ON GITHUB", 44)
-    top = d["langs"][0][0].upper() if d["langs"] else "—"
-    fs = max(20, min(38, int(196 / (max(len(top), 1) * 0.64))))
-    big_tile("stats-toplang.svg", 17, 240, 118, "cream", "TOP LANGUAGE", top, "MOST CODE WRITTEN", fs)
-
-    # row 3
-    langs_tile(d, updated)
-    print("stats tiles written to", OUT)
+    write_metrics(d)
+    write_langs(d, updated)
+    print("stats-metrics.svg and stats-langs.svg written to", OUT)
 
 
 main()

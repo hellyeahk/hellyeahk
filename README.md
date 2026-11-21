@@ -116,25 +116,23 @@
 </table>
 
 <br/>
-
 <img src="assets/section-stack.svg" alt="03 stack, toolkit" width="100%" />
 <img src="assets/stack.svg" alt="tooling: HTML5, CSS3, JavaScript, TypeScript, Canvas API, Three.js, shaders, Processing, Vue 3, React, Tailwind, After Effects" width="100%" />
 
 <br/>
-
 <img src="assets/section-stats.svg" alt="04 stats, GitHub data" width="100%" />
 <div align="center">
+  <img src="assets/snake-strip.svg" alt="contribution graph strip" width="100%" />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-light.svg" />
     <img alt="contribution snake" src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-dark.svg" width="100%" />
   </picture>
-  <img src="assets/stats-metrics.svg" alt="GitHub activity: contributions, streaks, public repos, stars, followers, top language" width="100%" />
+  <img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-metrics.svg" alt="GitHub activity: contributions, streaks, public repos, stars, followers, top language" width="100%" />
   <img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-langs.svg" alt="top languages by code written" width="100%" />
 </div>
 
 <br/>
-
 <img src="assets/section-contact.svg" alt="05 contact, say hello" width="100%" />
 <div align="center">
   <a href="https://t.me/yufanzuao">
