@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Generate brutalist GitHub stats (stats-metrics.svg & stats-langs.svg) from GitHub GraphQL API."""
-import json, os, sys, datetime, urllib.request
+"""Generate brutalist GitHub stats (stats-metrics.svg, stats-langs.svg) and framed snakes."""
+import json, os, re, sys, datetime, urllib.request
 
 OUT = sys.argv[1]
 MOCK = "--mock" in sys.argv
@@ -197,12 +197,70 @@ def write_langs(d, updated):
         f.write(svg)
 
 
+def wrap_snake(src_name, dst_name, is_dark=True):
+    src_path = os.path.join(OUT, src_name)
+    if not os.path.exists(src_path):
+        return
+    with open(src_path, "r", encoding="utf-8") as f:
+        raw = f.read()
+
+    vb_m = re.search(r'viewBox="([^"]+)"', raw)
+    vb = vb_m.group(1) if vb_m else "-16 -32 880 192"
+
+    inner = re.sub(r'^.*?<svg[^>]*>', '', raw, flags=re.S)
+    inner = re.sub(r'</svg>\s*$', '', inner, flags=re.S)
+
+    bg_c1 = "#240404" if is_dark else "#F5EFE6"
+    bg_c2 = "#120202" if is_dark else "#EAE0D0"
+    stroke_col = "#5C0908" if is_dark else "#87100F"
+    title_col = "#E63946" if is_dark else "#87100F"
+    sub_col = "#F5EFE6" if is_dark else "#5C0908"
+    dots = ["#241010", "#5C0908", "#872020", "#B33A39", "#E06B69"] if is_dark else ["#E8DDCB", "#D9908F", "#B33A39", "#872020", "#5C0908"]
+
+    framed_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-label="Contribution Snake">
+  <defs>
+    <radialGradient id="sBg" cx="50%" cy="50%" r="85%">
+      <stop offset="0%" stop-color="{bg_c1}" />
+      <stop offset="100%" stop-color="{bg_c2}" />
+    </radialGradient>
+  </defs>
+
+  <rect x="1" y="1" width="998" height="238" rx="12" fill="url(#sBg)" stroke="{stroke_col}" stroke-width="1.5" />
+
+  <text x="24" y="28" font-family="{FM}" font-size="11" font-weight="700" letter-spacing="1.5" fill="{title_col}">[ CONTRIBUTION SNAKE // 52 WEEKS ]</text>
+  <text x="976" y="28" text-anchor="end" font-family="{FM}" font-size="10" letter-spacing="1.2" fill="{sub_col}" fill-opacity="0.55">LIVE ACTIVITY FEED</text>
+  <line x1="24" y1="40" x2="976" y2="40" stroke="{sub_col}" stroke-opacity="0.14" />
+
+  <svg x="24" y="46" width="952" height="154" viewBox="{vb}" preserveAspectRatio="xMidYMid meet">
+{inner}
+  </svg>
+
+  <line x1="24" y1="208" x2="976" y2="208" stroke="{sub_col}" stroke-opacity="0.14" />
+  <text x="24" y="225" font-family="{FM}" font-size="9.5" letter-spacing="1.2" fill="{sub_col}" fill-opacity="0.55">AUTO-GENERATED VIA GITHUB ACTIONS</text>
+
+  <g transform="translate(835, 216)">
+    <text x="-38" y="9" font-family="{FM}" font-size="9" fill="{sub_col}" fill-opacity="0.55">LESS</text>
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="{dots[0]}" stroke="{stroke_col}" stroke-width="0.5" />
+    <rect x="15" y="0" width="10" height="10" rx="2" fill="{dots[1]}" />
+    <rect x="30" y="0" width="10" height="10" rx="2" fill="{dots[2]}" />
+    <rect x="45" y="0" width="10" height="10" rx="2" fill="{dots[3]}" />
+    <rect x="60" y="0" width="10" height="10" rx="2" fill="{dots[4]}" />
+    <text x="78" y="9" font-family="{FM}" font-size="9" fill="{sub_col}" fill-opacity="0.55">MORE</text>
+  </g>
+</svg>
+'''
+    with open(os.path.join(OUT, dst_name), "w", encoding="utf-8") as f:
+        f.write(framed_svg)
+
+
 def main():
     d = collect()
     updated = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")
     write_metrics(d)
     write_langs(d, updated)
-    print("stats-metrics.svg and stats-langs.svg written to", OUT)
+    wrap_snake("snake-dark.svg", "snake-framed-dark.svg", is_dark=True)
+    wrap_snake("snake-light.svg", "snake-framed-light.svg", is_dark=False)
+    print("All framed stats and snakes written to", OUT)
 
 
 main()
