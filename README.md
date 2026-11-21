@@ -18,17 +18,23 @@
 
 <img src="./assets/section-lab.svg" alt="02 lab, visual experiments" width="100%" />
 
-<!-- ROW 1: EXP.001 Header & Description -->
+<!-- ROW 1: EXP.001 Hero Compilation -->
 <table width="100%">
   <tr>
     <td width="62%" valign="top">
       <a href="./flora/">
         <img src="./assets/exp-001.svg" alt="EXP.001, flora, botanical series, 6 works" width="100%" />
       </a>
+      <a href="./flora/">
+        <img src="./assets/compilation.gif" alt="flora cover: compilation of interactive flower studies" width="100%" />
+      </a>
     </td>
     <td width="38%" valign="top">
       <a href="./flora/">
-        <img src="./assets/lab-desc.svg" alt="flora: a growing series of interactive flower studies." width="100%" />
+        <img src="./assets/lab-url.svg" alt="flora folder index" width="100%" />
+      </a>
+      <a href="./flora/">
+        <img src="./assets/lab-desc.svg" alt="flora: a growing series of interactive flower studies. Open the folder." width="100%" />
       </a>
     </td>
   </tr>
@@ -39,52 +45,64 @@
   <tr>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/red-roses/">
-        <img src="./assets/flora-card-01.svg" alt="01 red roses: live demo" width="100%" />
+        <img src="./assets/flora-head-01.svg" alt="01 roses" width="100%" />
+        <img src="./assets/red-roses.gif" alt="01 roses: live preview" width="100%" />
+        <img src="./assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/red-roses">
-        <img src="./assets/flora-src-01.svg" alt="01 red roses: source" width="100%" />
+        <img src="./assets/flora-src-01.svg" alt="01 roses: source code" width="100%" />
       </a>
     </td>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/lotus/">
-        <img src="./assets/flora-card-02.svg" alt="02 lotus: live demo" width="100%" />
+        <img src="./assets/flora-head-02.svg" alt="02 lotus" width="100%" />
+        <img src="./assets/lotus.gif" alt="02 lotus: live preview" width="100%" />
+        <img src="./assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/lotus">
-        <img src="./assets/flora-src-02.svg" alt="02 lotus: source" width="100%" />
+        <img src="./assets/flora-src-02.svg" alt="02 lotus: source code" width="100%" />
       </a>
     </td>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/blooming-flower/">
-        <img src="./assets/flora-card-03.svg" alt="03 blooming flower: live demo" width="100%" />
+        <img src="./assets/flora-head-03.svg" alt="03 blooming flower" width="100%" />
+        <img src="./assets/blooming-flower.gif" alt="03 blooming flower: live preview" width="100%" />
+        <img src="./assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/blooming-flower">
-        <img src="./assets/flora-src-03.svg" alt="03 blooming flower: source" width="100%" />
+        <img src="./assets/flora-src-03.svg" alt="03 blooming flower: source code" width="100%" />
       </a>
     </td>
   </tr>
   <tr>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/edelweiss/">
-        <img src="./assets/flora-card-04.svg" alt="04 edelweiss: live demo" width="100%" />
+        <img src="./assets/flora-head-04.svg" alt="04 edelweiss" width="100%" />
+        <img src="./assets/edelweiss.gif" alt="04 edelweiss: live preview" width="100%" />
+        <img src="./assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/edelweiss">
-        <img src="./assets/flora-src-04.svg" alt="04 edelweiss: source" width="100%" />
+        <img src="./assets/flora-src-04.svg" alt="04 edelweiss: source code" width="100%" />
       </a>
     </td>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/stargazer-lily/">
-        <img src="./assets/flora-card-05.svg" alt="05 stargazer lily: live demo" width="100%" />
+        <img src="./assets/flora-head-05.svg" alt="05 stargazer lily" width="100%" />
+        <img src="./assets/stargazer-lily.gif" alt="05 stargazer lily: live preview" width="100%" />
+        <img src="./assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/stargazer-lily">
-        <img src="./assets/flora-src-05.svg" alt="05 stargazer lily: source" width="100%" />
+        <img src="./assets/flora-src-05.svg" alt="05 stargazer lily: source code" width="100%" />
       </a>
     </td>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/higanbana/">
-        <img src="./assets/flora-card-06.svg" alt="06 higanbana: live demo" width="100%" />
+        <img src="./assets/flora-head-06.svg" alt="06 higanbana" width="100%" />
+        <img src="./assets/higanbana.gif" alt="06 higanbana: live preview" width="100%" />
+        <img src="./assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/higanbana">
-        <img src="./assets/flora-src-06.svg" alt="06 higanbana: source" width="100%" />
+        <img src="./assets/flora-src-06.svg" alt="06 higanbana: source code" width="100%" />
       </a>
     </td>
   </tr>
@@ -109,8 +127,8 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <a href="./flora/">
-        <img src="./assets/lab-url.svg" alt="open flora index" width="100%" />
+      <a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora">
+        <img src="./assets/lab-flora-repos.svg" alt="browse all repositories tagged flora" width="100%" />
       </a>
     </td>
     <td width="50%" valign="top">
@@ -130,7 +148,6 @@
 
 <img src="./assets/section-stats.svg" alt="04 stats, GitHub data" width="100%" />
 <div align="center">
-  <!-- Fixed snake filename to match snake.yml -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-light.svg" />

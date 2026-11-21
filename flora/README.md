@@ -11,7 +11,9 @@
   <tr>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/red-roses/">
-        <img src="../assets/flora-card-01.svg" alt="red roses: open live demo" width="100%" />
+        <img src="../assets/flora-head-01.svg" alt="01 roses" width="100%" />
+        <img src="../assets/red-roses.gif" alt="01 roses: live preview" width="100%" />
+        <img src="../assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/red-roses">
         <img src="../assets/flora-src-01.svg" alt="red roses: source code" width="100%" />
@@ -19,7 +21,9 @@
     </td>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/lotus/">
-        <img src="../assets/flora-card-02.svg" alt="lotus: open live demo" width="100%" />
+        <img src="../assets/flora-head-02.svg" alt="02 lotus" width="100%" />
+        <img src="../assets/lotus.gif" alt="02 lotus: live preview" width="100%" />
+        <img src="../assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/lotus">
         <img src="../assets/flora-src-02.svg" alt="lotus: source code" width="100%" />
@@ -27,7 +31,9 @@
     </td>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/blooming-flower/">
-        <img src="../assets/flora-card-03.svg" alt="blooming flower: open live demo" width="100%" />
+        <img src="../assets/flora-head-03.svg" alt="03 blooming flower" width="100%" />
+        <img src="../assets/blooming-flower.gif" alt="03 blooming flower: live preview" width="100%" />
+        <img src="../assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/blooming-flower">
         <img src="../assets/flora-src-03.svg" alt="blooming flower: source code" width="100%" />
@@ -37,7 +43,9 @@
   <tr>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/edelweiss/">
-        <img src="../assets/flora-card-04.svg" alt="edelweiss: open live demo" width="100%" />
+        <img src="../assets/flora-head-04.svg" alt="04 edelweiss" width="100%" />
+        <img src="../assets/edelweiss.gif" alt="04 edelweiss: live preview" width="100%" />
+        <img src="../assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/edelweiss">
         <img src="../assets/flora-src-04.svg" alt="edelweiss: source code" width="100%" />
@@ -45,7 +53,9 @@
     </td>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/stargazer-lily/">
-        <img src="../assets/flora-card-05.svg" alt="stargazer lily: open live demo" width="100%" />
+        <img src="../assets/flora-head-05.svg" alt="05 stargazer lily" width="100%" />
+        <img src="../assets/stargazer-lily.gif" alt="05 stargazer lily: live preview" width="100%" />
+        <img src="../assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/stargazer-lily">
         <img src="../assets/flora-src-05.svg" alt="stargazer lily: source code" width="100%" />
@@ -53,7 +63,9 @@
     </td>
     <td width="33.3%" valign="top">
       <a href="https://hellyeahk.github.io/higanbana/">
-        <img src="../assets/flora-card-06.svg" alt="higanbana: open live demo" width="100%" />
+        <img src="../assets/flora-head-06.svg" alt="06 higanbana" width="100%" />
+        <img src="../assets/higanbana.gif" alt="06 higanbana: live preview" width="100%" />
+        <img src="../assets/flora-demo-btn.svg" alt="open live demo" width="100%" />
       </a>
       <a href="https://github.com/hellyeahk/higanbana">
         <img src="../assets/flora-src-06.svg" alt="higanbana: source code" width="100%" />
@@ -66,24 +78,6 @@
 
 <br/>
 
-<details>
-<summary>plain-text index</summary>
-
-<br/>
-
-| № | Work | Live | Source |
-|---|------|------|--------|
-| 01 | red roses | [demo](https://hellyeahk.github.io/red-roses/) | [red-roses](https://github.com/hellyeahk/red-roses) |
-| 02 | lotus | [demo](https://hellyeahk.github.io/lotus/) | [lotus](https://github.com/hellyeahk/lotus) |
-| 03 | blooming flower | [demo](https://hellyeahk.github.io/blooming-flower/) | [blooming-flower](https://github.com/hellyeahk/blooming-flower) |
-| 04 | edelweiss | [demo](https://hellyeahk.github.io/edelweiss/) | [edelweiss](https://github.com/hellyeahk/edelweiss) |
-| 05 | stargazer lily | [demo](https://hellyeahk.github.io/stargazer-lily/) | [stargazer-lily](https://github.com/hellyeahk/stargazer-lily) |
-| 06 | higanbana | [demo](https://hellyeahk.github.io/higanbana/) | [higanbana](https://github.com/hellyeahk/higanbana) |
-
-</details>
-
 <p align="center">
-  <a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora">all repositories tagged <code>flora</code></a>
-  ·
-  <a href="../README.md">← back to profile</a>
+  <a href="https://github.com/hellyeahk">← back to profile</a>
 </p>
