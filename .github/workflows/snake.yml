@@ -1,4 +1,7 @@
-name: Generate Snake Animation
+name: Generate Profile Assets
+
+# Builds the contribution snake + brutalist stats tiles and publishes them
+# to the `output` branch. README reads them from there.
 
 on:
   schedule:
@@ -16,13 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate snake from contribution graph
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate snake from contribution graph (crimson palette)
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/snake-light.svg?color_snake=%232A0505&color_dots=%23E8DDCB,%23D9908F,%23B33A39,%23872020,%235C0908
+            dist/snake-dark.svg?color_snake=%23F5EFE6&color_dots=%23241010,%235C0908,%23872020,%23B33A39,%23E06B69
+
+      - name: Generate stats tiles
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOGIN: ${{ github.repository_owner }}
+        run: python3 .github/scripts/stats.py dist
 
       - name: Push to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
