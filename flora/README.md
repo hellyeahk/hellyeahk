@@ -2,10 +2,12 @@
   <img src="../assets/flora-header.svg" alt="flora, a botanical series of six interactive flower studies" width="100%" />
 </div>
 
+<br>
 <p align="center">
   A series of interactive botanical studies.<br/>
   Each work lives in its own repository with its own live demo, and this page is the index.
 </p>
+<br>
 
 <!-- ROW 2: Direct Live Demo Gallery (3x2 Grid) -->
 <table width="100%">
