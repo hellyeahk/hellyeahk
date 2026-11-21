@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="230" viewBox="0 0 1000 230" role="img" aria-label="Manifesto and Disciplines">
+  <defs>
+    <radialGradient id="mBg" cx="30%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#2A0505" />
+      <stop offset="100%" stop-color="#140202" />
+    </radialGradient>
+    <filter id="chalkMini" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.16" numOctaves="2" seed="6" result="turb" />
+      <feDisplacementMap in="SourceGraphic" in2="turb" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <clipPath id="mClip"><rect width="1000" height="230" rx="14" /></clipPath>
+  </defs>
+
+  <g clip-path="url(#mClip)">
+    <rect width="1000" height="230" fill="url(#mBg)" />
+
+    
+    <g stroke="#F5EFE6" stroke-opacity="0.14" stroke-width="1">
+      <line x1="540" y1="0" x2="540" y2="230" />
+      <line x1="0" y1="42" x2="1000" y2="42" />
+      <line x1="540" y1="136" x2="1000" y2="136" />
+    </g>
+
+    
+    <text x="32" y="27" font-family="&#39;Courier New&#39;, Courier, monospace" font-size="11" font-weight="700" letter-spacing="2" fill="#E63946">
+      [01 // MANIFESTO]
+    </text>
+    <g font-family="&#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" font-weight="800" fill="#F5EFE6" letter-spacing="-1.4">
+      <text x="32" y="88" font-size="33">building interactive visual</text>
+      <text x="32" y="126" font-size="33">playgrounds, generative art</text>
+      <text x="32" y="164" font-size="33">&amp; tactile web interfaces.</text>
+    </g>
+    <text x="32" y="202" font-family="&#39;Georgia&#39;, &#39;Times New Roman&#39;, serif" font-style="italic" font-size="14" fill="#F5EFE6" fill-opacity="0.72">
+      “I’d rather spend an hour on an easing curve than skip it.”
+    </text>
+
+    
+    <g transform="translate(492, 178) rotate(14)" filter="url(#chalkMini)">
+      <polygon points="0,-24 6,-7 24,-7 9,4 15,21 0,10 -15,21 -9,4 -24,-7 -6,-7" fill="#87100F" />
+    </g>
+
+    
+    <text x="568" y="27" font-family="&#39;Courier New&#39;, Courier, monospace" font-size="11" font-weight="700" letter-spacing="2" fill="#E63946">
+      [02 // EXPLORATIONS]
+    </text>
+    <text x="568" y="76" font-family="&#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#F5EFE6" letter-spacing="-0.4">
+      Interactive Canvas · 2D/3D Simulation · Shaders
+    </text>
+    <text x="568" y="106" font-family="&#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#F5EFE6" fill-opacity="0.82" letter-spacing="-0.4">
+      Generative Art · Kinetic UI · Motion Systems
+    </text>
+
+    
+    <text x="568" y="162" font-family="&#39;Courier New&#39;, Courier, monospace" font-size="11" font-weight="700" letter-spacing="2" fill="#E63946">
+      [03 // ARSENAL]
+    </text>
+    <text x="568" y="196" font-family="&#39;Courier New&#39;, Courier, monospace" font-size="13.5" font-weight="700" letter-spacing="1" fill="#F5EFE6" fill-opacity="0.9">
+      JS / TS · THREE.JS · VUE · REACT · PROCESSING · AE
+    </text>
+  </g>
+
+  <rect x="1" y="1" width="998" height="228" rx="13" fill="none" stroke="#87100F" stroke-width="1.5" />
+</svg>
