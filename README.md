@@ -14,17 +14,6 @@
 <img src="./assets/manifesto.svg" alt="Manifesto: building interactive visual playgrounds, generative art and tactile web interfaces." width="100%"/>
 </div>
 
-```text
-+--------------------------------------------------------------+
-|  HANDLE      @hellyeahk                                      |
-|  DISCIPLINE  creative media & front-end                      |
-|  OBSESSION   interactive canvas, visual web experiments      |
-|  MEDIUM      HTML5 / JS / 60FPS, generative art, UI          |
-|  ARCHIVE     curated github pages, procedural flora          |
-|  CONTACT     telegram @YUFANZUAO                             |
-+--------------------------------------------------------------+
-```
-
 <br/>
 
 <img src="./assets/section-stack.svg" alt="02 stack" width="100%"/>
@@ -37,61 +26,26 @@
 
 <img src="./assets/section-lab.svg" alt="03 visual lab and experiments" width="100%"/>
 
-<!-- ============ EXP.001 — FEATURED ============ -->
-<table width="100%">
-<tr>
-<td width="60%" valign="top">
-  <img src="./assets/exp-001.svg" alt="Experiment 001: generative simulation, live" width="100%"/>
-  <a href="https://hellyeahk.github.io/red-roses/">
-    <img src="./assets/red-roses.gif" alt="Red roses interactive simulation. Click to launch." width="100%"/>
-  </a>
-</td>
-<td width="40%" valign="top">
-  <br/>
-  <h2>red roses.</h2>
-  <p>
-    Real-time procedural bloom simulation exploring organic layering,
-    custom easing transitions, and dynamic light gradients on HTML5 Canvas.
-  </p>
-  <p>
-    <img src="https://img.shields.io/badge/-HTML5%20CANVAS-87100F?style=flat-square" alt="HTML5 Canvas"/>
-    <img src="https://img.shields.io/badge/-JAVASCRIPT-87100F?style=flat-square" alt="JavaScript"/>
-    <img src="https://img.shields.io/badge/-CSS3-87100F?style=flat-square" alt="CSS3"/>
-  </p>
-  <p>
-    <a href="https://hellyeahk.github.io/red-roses/"><strong>↗&nbsp;LAUNCH EXPERIMENT</strong></a><br/>
-    <sub><a href="https://github.com/hellyeahk/red-roses">inspect source →</a></sub>
-  </p>
-</td>
-</tr>
-</table>
+<div align="center">
 
-<!-- ============ EXP.002 + EXP.003 ============ -->
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-  <img src="./assets/exp-002.svg" alt="Experiment 002: interactive study, in progress" width="100%"/>
-  <h3>stylized terrarium &amp; virtual companion.</h3>
-  <p>2D canvas state machine and tactile micro-interactions.</p>
-  <p>
-    <img src="https://img.shields.io/badge/-CANVAS-87100F?style=flat-square" alt="Canvas"/>
-    <img src="https://img.shields.io/badge/-STATE%20MACHINE-87100F?style=flat-square" alt="State machine"/>
-    <img src="https://img.shields.io/badge/-MICRO--INTERACTIONS-87100F?style=flat-square" alt="Micro-interactions"/>
-  </p>
-</td>
-<td width="50%" valign="top">
-  <img src="./assets/exp-003.svg" alt="Experiment 003: kinetic interface, index" width="100%"/>
-  <h3>motion &amp; spatial web prototypes.</h3>
-  <p>Custom easing curves, shaders and interactive layouts.</p>
-  <p>
-    <img src="https://img.shields.io/badge/-EASING-87100F?style=flat-square" alt="Easing"/>
-    <img src="https://img.shields.io/badge/-SHADERS-87100F?style=flat-square" alt="Shaders"/>
-    <img src="https://img.shields.io/badge/-LAYOUTS-87100F?style=flat-square" alt="Layouts"/>
-  </p>
-  <p><a href="https://github.com/hellyeahk?tab=repositories"><strong>↗&nbsp;BROWSE INDEX</strong></a></p>
-</td>
-</tr>
-</table>
+<!-- row 0 -->
+<a href="https://hellyeahk.github.io/red-roses/"><img src="./assets/exp-001.svg" alt="Experiment 001: generative simulation, live" width="62%"/></a>
+<a href="https://hellyeahk.github.io/red-roses/"><img src="./assets/lab-url.svg" alt="hellyeahk.github.io/red-roses" width="36%"/></a>
+<br/>
+<!-- row 1: hero -->
+<a href="https://hellyeahk.github.io/red-roses/"><img src="./assets/red-roses.gif" alt="Red roses interactive simulation. Click to launch." width="62%"/></a>
+<a href="https://hellyeahk.github.io/red-roses/"><img src="./assets/lab-desc.svg" alt="Red roses: real-time procedural bloom simulation. Launch experiment." width="36%"/></a>
+<br/>
+<!-- row 2 -->
+<img src="./assets/lab-002.svg" alt="Experiment 002: stylized terrarium and virtual companion, in progress" width="33%"/>
+<a href="https://github.com/hellyeahk?tab=repositories"><img src="./assets/lab-003.svg" alt="Experiment 003: motion and spatial web prototypes. Browse index." width="33%"/></a>
+<img src="./assets/lab-004.svg" alt="Experiment 004: slot open" width="30%"/>
+<br/>
+<!-- row 3 -->
+<a href="https://github.com/hellyeahk/red-roses"><img src="./assets/lab-source.svg" alt="Inspect source on GitHub" width="49%"/></a>
+<a href="https://github.com/hellyeahk?tab=repositories"><img src="./assets/lab-all.svg" alt="Browse every repository" width="49%"/></a>
+
+</div>
 
 <br/>
 
@@ -99,17 +53,24 @@
 
 <div align="center">
 
-<img height="190" src="https://github-readme-stats.vercel.app/api?username=hellyeahk&show_icons=true&hide_border=false&border_color=F5EFE6&bg_color=87100F&title_color=F5EFE6&text_color=F5EFE6&icon_color=F5EFE6&ring_color=F5EFE6&border_radius=16&custom_title=GITHUB%20DATA" alt="GitHub stats"/>
-<img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hellyeahk&layout=compact&hide_border=false&border_color=F5EFE6&bg_color=87100F&title_color=F5EFE6&text_color=F5EFE6&border_radius=16&custom_title=LANGUAGES" alt="Top languages"/>
-
-<img src="https://streak-stats.demolab.com?user=hellyeahk&background=87100F&stroke=F5EFE6&ring=F5EFE6&fire=F5EFE6&currStreakNum=F5EFE6&sideNums=F5EFE6&currStreakLabel=F5EFE6&sideLabels=F5EFE6&dates=D9CFC0&border_radius=16" alt="Contribution streak"/>
-
-<br/><br/>
-
+<!-- stats are generated by .github/workflows/snake.yml into the output branch -->
+<img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-contrib.svg" alt="Contributions in the last 12 months" width="38%"/>
+<img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-streak.svg" alt="Current contribution streak" width="30%"/>
+<img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-longest.svg" alt="Longest contribution streak" width="30%"/>
+<br/>
+<img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-repos.svg" alt="Public repositories" width="24%"/>
+<img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-stars.svg" alt="Total stars" width="24%"/>
+<img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-followers.svg" alt="Followers" width="24%"/>
+<img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-toplang.svg" alt="Top language" width="24%"/>
+<br/>
+<img src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/stats-langs.svg" alt="Top languages by code size" width="98%"/>
+<br/>
+<img src="./assets/snake-strip.svg" alt="Contribution graph, auto-generated every 12 hours" width="98%"/>
+<br/>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-light.svg"/>
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-dark.svg" width="100%"/>
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-dark.svg" width="98%"/>
 </picture>
 
 </div>
