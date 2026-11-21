@@ -14,17 +14,6 @@
 <img src="./assets/manifesto.svg" alt="Manifesto: building interactive visual playgrounds, generative art and tactile web interfaces." width="100%"/>
 </div>
 
-```text
-+--------------------------------------------------------------+
-|  HANDLE      @hellyeahk                                      |
-|  DISCIPLINE  creative media & front-end                      |
-|  OBSESSION   interactive canvas, visual web experiments      |
-|  MEDIUM      HTML5 / JS / 60FPS, generative art, UI          |
-|  ARCHIVE     curated github pages, procedural flora          |
-|  CONTACT     telegram @YUFANZUAO                             |
-+--------------------------------------------------------------+
-```
-
 <br/>
 
 <img src="./assets/section-stack.svg" alt="02 stack" width="100%"/>
