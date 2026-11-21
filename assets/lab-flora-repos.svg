@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="56.00" viewBox="0 0 490 56.00" role="img" aria-label="Browse all repositories tagged flora">
+  <defs>
+    <radialGradient id="c6" cx="45%" cy="40%" r="90%"><stop offset="0" stop-color="#A81918"/><stop offset="0.65" stop-color="#87100F"/><stop offset="1" stop-color="#5C0908"/></radialGradient>
+    <radialGradient id="d6" cx="30%" cy="40%" r="90%"><stop offset="0" stop-color="#2A0505"/><stop offset="1" stop-color="#140202"/></radialGradient>
+    <filter id="k6" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.16" numOctaves="2" seed="8" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter>
+    <clipPath id="p6"><rect width="490" height="56.00" rx="6"/></clipPath>
+  </defs>
+  <g clip-path="url(#p6)">
+    <rect width="490" height="56.00" fill="#F5EFE6"/>
+
+    <text x="20" y="35" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="19" font-weight="800" letter-spacing="-0.8" fill="#7A0E0D">FLORA REPOS</text>
+    <text x="436" y="33" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" letter-spacing="1" fill="#7A0E0D">topic: flora</text>
+    <g stroke="#7A0E0D" stroke-width="3" stroke-linecap="square" fill="none"><line x1="450" y1="35" x2="466" y2="19"/><polyline points="452.4,19 466,19 466,32.6"/></g>
+
+  </g>
+  <rect x="0.75" y="0.75" width="488.5" height="54.50" rx="6" fill="none" stroke="#F5EFE6" stroke-opacity="0" stroke-width="0"/>
+</svg>
