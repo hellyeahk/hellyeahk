@@ -19,4 +19,4 @@ All repositories in the series: [topic:flora](https://github.com/hellyeahk?tab=r
 
 <br/>
 
-[← back to profile](../README.md)
+[← back to profile](https://github.com/hellyeahk)
