@@ -10,6 +10,10 @@
 
 <img src="./assets/section-about.svg" alt="01 about" width="100%"/>
 
+<div align="center">
+<img src="./assets/manifesto.svg" alt="Manifesto: building interactive visual playgrounds, generative art and tactile web interfaces." width="100%"/>
+</div>
+
 ```text
 +--------------------------------------------------------------+
 |  HANDLE      @hellyeahk                                      |
@@ -20,10 +24,6 @@
 |  CONTACT     telegram @YUFANZUAO                             |
 +--------------------------------------------------------------+
 ```
-
-> **No gradients of personality. No filler.**
-> I build small, loud, interactive things for the browser and keep them in one archive.
-> If it moves, it should run at 60fps. If it doesn't move, it should at least have a grid.
 
 <br/>
 
