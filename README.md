@@ -1,82 +1,68 @@
 <div align="center">
-  <img src="./assets/header.svg" alt="jeremiah hawthorne — interactive canvas & visual web experiments" width="100%"/>
+<img src="./assets/header.svg" alt="Creative media and front-end. Interactive canvas and visual web experiments." width="100%"/>
+<img src="./assets/ticker.svg" alt="Interactive canvas, visual web experiments, generative art, UI engineering" width="100%"/>
 </div>
-
 <br/>
-
+<img src="./assets/section-about.svg" alt="01 about" width="100%"/>
+```text
++--------------------------------------------------------------+
+|  HANDLE      @hellyeahk                                      |
+|  DISCIPLINE  creative media & front-end                      |
+|  OBSESSION   interactive canvas, visual web experiments      |
+|  MEDIUM      HTML5 / JS / 60FPS, generative art, UI          |
+|  ARCHIVE     curated github pages, procedural flora          |
+|  CONTACT     telegram @YUFANZUAO                             |
++--------------------------------------------------------------+
+```
+ 
+> **No gradients of personality. No filler.**
+> I build small, loud, interactive things for the browser and keep them in one archive.
+> If it moves, it should run at 60fps. If it doesn't move, it should at least have a grid.
+ 
+<br/>
+<img src="./assets/section-stack.svg" alt="02 stack" width="100%"/>
 <div align="center">
-  <img src="./assets/manifesto.svg" alt="manifesto and explorations" width="100%"/>
+<img src="./assets/stack.svg" alt="Tech stack: HTML5, CSS3, JavaScript, Canvas API, Vue 3, Tailwind, React, Vite, Figma, After Effects, Processing, Git" width="100%"/>
 </div>
-
 <br/>
-
-### `[04]` — visual lab & experiments
-
-<table width="100%">
-  <tr>
-    <td width="60%" align="center">
-      <a href="https://hellyeahk.github.io/red-roses/">
-        <img src="./assets/red-roses.gif" alt="red roses interactive simulation" width="100%" />
-      </a>
-    </td>
-    <td width="40%" valign="middle">
-      <sub><code>EXP. 001 // PROCEDURAL CANVAS</code></sub>
-      <h2>red roses.</h2>
-      <p>
-        Real-time procedural bloom simulation exploring organic layering, custom easing transitions, and dynamic light gradients on HTML5 Canvas.
-      </p>
-      <p>
-        <code>HTML5 CANVAS</code> &nbsp; <code>JAVASCRIPT</code> &nbsp; <code>CSS3</code>
-      </p>
-      <br/>
-      <p>
-        <a href="https://hellyeahk.github.io/red-roses/"><strong>↗ LAUNCH EXPERIMENT</strong></a><br/>
-        <sub><a href="https://github.com/hellyeahk/red-roses">inspect source →</a></sub>
-      </p>
-    </td>
-  </tr>
-</table>
-
-<table width="100%">
-  <tr>
-    <td width="33.3%" align="left" valign="top">
-      <a href="https://hellyeahk.github.io/nama-proyek-2/">
-        <img src="./assets/exp-002.gif" alt="experiment 002" width="100%" />
-      </a>
-      <br/>
-      <sub><code>EXP. 002 // INTERACTIVE TOY</code></sub><br/>
-      <strong>experiment 02.</strong><br/>
-      <sub>canvas physics &amp; state · <a href="https://hellyeahk.github.io/nama-proyek-2/"><strong>open ↗</strong></a></sub>
-    </td>
-    <td width="33.3%" align="left" valign="top">
-      <a href="https://hellyeahk.github.io/nama-proyek-3/">
-        <img src="./assets/exp-003.gif" alt="experiment 003" width="100%" />
-      </a>
-      <br/>
-      <sub><code>EXP. 003 // GENERATIVE STUDY</code></sub><br/>
-      <strong>experiment 03.</strong><br/>
-      <sub>procedural geometry · <a href="https://hellyeahk.github.io/nama-proyek-3/"><strong>open ↗</strong></a></sub>
-    </td>
-    <td width="33.3%" align="left" valign="top">
-      <a href="https://hellyeahk.github.io/nama-proyek-4/">
-        <img src="./assets/exp-004.gif" alt="experiment 004" width="100%" />
-      </a>
-      <br/>
-      <sub><code>EXP. 004 // MOTION / UI</code></sub><br/>
-      <strong>experiment 04.</strong><br/>
-      <sub>kinetic web interface · <a href="https://hellyeahk.github.io/nama-proyek-4/"><strong>open ↗</strong></a></sub>
-    </td>
-  </tr>
-</table>
-
+<img src="./assets/section-archive.svg" alt="03 archive" width="100%"/>
+<!--
+  GANTI baris di bawah dengan proyekmu sendiri.
+  Salin satu baris tabel untuk menambah entri baru.
+-->
+ 
+| NO. | PAGE | MEDIUM | LINK |
+|:---:|:-----|:-------|:----:|
+| **001** | **PROCEDURAL FLORA** — plants that grow themselves, drawn on canvas | HTML5 canvas · JS | [**OPEN ↗**](https://hellyeahk.github.io/) |
+| **002** | **NAMA_PROYEK** — satu kalimat tegas tentang apa ini | TECH · TECH | [**OPEN ↗**](https://hellyeahk.github.io/) |
+| **003** | **NAMA_PROYEK** — satu kalimat tegas tentang apa ini | TECH · TECH | [**OPEN ↗**](https://hellyeahk.github.io/) |
+| **004** | **NAMA_PROYEK** — satu kalimat tegas tentang apa ini | TECH · TECH | [**OPEN ↗**](https://hellyeahk.github.io/) |
+ 
+<div align="right">
+**[ ALL REPOSITORIES → ](https://github.com/hellyeahk?tab=repositories)**
+ 
+</div>
 <br/>
-
+<img src="./assets/section-stats.svg" alt="04 stats" width="100%"/>
 <div align="center">
-  <sub>
-    <strong>DIRECT CHANNEL:</strong> <a href="https://t.me/yufanzuao">TELEGRAM (@YUFANZUAO)</a>
-    &nbsp;&nbsp;//&nbsp;&nbsp;
-    <strong>FULL INDEX:</strong> <a href="https://github.com/hellyeahk?tab=repositories">ALL REPOSITORIES ↗</a>
-  </sub>
-  <br/><br/>
-  <img src="./assets/footer.svg" alt="curated github pages archive" width="100%"/>
+<img height="190" src="https://github-readme-stats.vercel.app/api?username=hellyeahk&show_icons=true&hide_border=false&border_color=F5EFE6&bg_color=87100F&title_color=F5EFE6&text_color=F5EFE6&icon_color=F5EFE6&ring_color=F5EFE6&border_radius=16&custom_title=GITHUB%20DATA" alt="GitHub stats"/>
+<img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hellyeahk&layout=compact&hide_border=false&border_color=F5EFE6&bg_color=87100F&title_color=F5EFE6&text_color=F5EFE6&border_radius=16&custom_title=LANGUAGES" alt="Top languages"/>
+<img src="https://streak-stats.demolab.com?user=hellyeahk&background=87100F&stroke=F5EFE6&ring=F5EFE6&fire=F5EFE6&currStreakNum=F5EFE6&sideNums=F5EFE6&currStreakLabel=F5EFE6&sideLabels=F5EFE6&dates=D9CFC0&border_radius=16" alt="Contribution streak"/>
+<br/><br/>
+ 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-light.svg"/>
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/hellyeahk/hellyeahk/output/snake-dark.svg" width="100%"/>
+</picture>
 </div>
+<br/>
+<img src="./assets/section-contact.svg" alt="05 contact" width="100%"/>
+<div align="center">
+[![TELEGRAM](https://img.shields.io/badge/TELEGRAM-%40YUFANZUAO-F5EFE6?style=for-the-badge&logo=telegram&logoColor=87100F&labelColor=87100F)](https://t.me/YUFANZUAO)
+[![GITHUB PAGES](https://img.shields.io/badge/GITHUB%20PAGES-ARCHIVE-F5EFE6?style=for-the-badge&logo=github&logoColor=87100F&labelColor=87100F)](https://hellyeahk.github.io/)
+ 
+<br/>
+<img src="./assets/footer.svg" alt="Curated github pages archive. @hellyeahk" width="100%"/>
+</div>
+ 
