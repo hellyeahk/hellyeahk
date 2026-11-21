@@ -22,18 +22,18 @@
 <table width="100%">
   <tr>
     <td width="62%" valign="top">
-      <a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora">
+      <a>
         <img src="assets/exp-001.svg" alt="EXP.001, flora, botanical series, 6 works" width="100%" />
       </a>
-      <a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora">
+      <a>
         <img src="assets/compilation.gif" alt="flora cover: compilation of interactive flower studies" width="100%" />
       </a>
     </td>
     <td width="38%" valign="top">
-      <a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora">
+      <a>
         <img src="assets/lab-url.svg" alt="flora folder index" width="100%" />
       </a>
-      <a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora">
+      <a href="https://github.com/hellyeahk/hellyeahk/blob/main/flora/README.md">
         <img src="assets/lab-desc.svg" alt="flora: a growing series of interactive flower studies." width="100%" />
       </a>
     </td>
