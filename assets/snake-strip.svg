@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="36.00" viewBox="0 0 980 36.00" role="img" aria-label="Contribution graph, auto-generated every 12 hours">
+  <defs>
+    <radialGradient id="c8" cx="45%" cy="40%" r="90%"><stop offset="0" stop-color="#A81918"/><stop offset="0.65" stop-color="#87100F"/><stop offset="1" stop-color="#5C0908"/></radialGradient>
+    <radialGradient id="d8" cx="30%" cy="40%" r="90%"><stop offset="0" stop-color="#2A0505"/><stop offset="1" stop-color="#140202"/></radialGradient>
+    <filter id="k8" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.16" numOctaves="2" seed="10" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter>
+    <clipPath id="p8"><rect width="980" height="36.00" rx="6"/></clipPath>
+  </defs>
+  <g clip-path="url(#p8)">
+    <rect width="980" height="36.00" fill="url(#c8)"/>
+
+    <line x1="0" y1="5" x2="980" y2="5" stroke="#F5EFE6" stroke-opacity="0.18"/>
+    <line x1="0" y1="31" x2="980" y2="31" stroke="#F5EFE6" stroke-opacity="0.18"/>
+    <text x="18" y="23" font-family="'Courier New', Courier, monospace" font-size="11.5" font-weight="700" letter-spacing="2" fill="#F5EFE6">// CONTRIBUTION GRAPH</text>
+    <text x="962" y="23" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" letter-spacing="1.5" fill="#F5EFE6" fill-opacity="0.75">AUTO-GENERATED EVERY 12 HOURS</text>
+
+  </g>
+  <rect x="0.75" y="0.75" width="978.5" height="34.50" rx="6" fill="none" stroke="#F5EFE6" stroke-opacity="0.35" stroke-width="1.5"/>
+</svg>
