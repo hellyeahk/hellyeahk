@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="330" viewBox="0 0 330 330" role="img" aria-label="red roses, flora study 01. Open live demo.">
+  <defs>
+    <radialGradient id="cr" cx="45%" cy="40%" r="90%"><stop offset="0" stop-color="#A81918"/><stop offset="0.65" stop-color="#87100F"/><stop offset="1" stop-color="#5C0908"/></radialGradient>
+    <radialGradient id="dk" cx="30%" cy="40%" r="90%"><stop offset="0" stop-color="#2A0505"/><stop offset="1" stop-color="#140202"/></radialGradient>
+    <filter id="k" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.16" numOctaves="2" seed="5" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="2.6" xChannelSelector="R" yChannelSelector="G"/></filter>
+    <clipPath id="cp"><rect width="330" height="330" rx="6"/></clipPath>
+  </defs>
+  <g clip-path="url(#cp)">
+    <rect width="330" height="330" fill="url(#dk)"/>
+    <line x1="0" y1="44" x2="330" y2="44" stroke="#F5EFE6" stroke-opacity="0.18"/>
+    <text x="18" y="28" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" letter-spacing="2" fill="#E63946" fill-opacity="1">№ 01</text>
+    <text x="312" y="28" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="10.5" letter-spacing="1.6" fill="#F5EFE6" fill-opacity="0.6">// FLORA</text>
+    <circle cx="165" cy="128" r="80" fill="none" stroke="#F5EFE6" stroke-opacity="0.2" stroke-dasharray="3 6"/>
+    <g transform="translate(165,128) scale(1.0)" filter="url(#k)" fill="#F5EFE6" fill-opacity="0.10" stroke="#F5EFE6" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="round"><path d="M0,0 C35.1,-16.0 29.7,-64 0,-64 C-29.7,-64 -35.1,-16.0 0,0Z" transform="rotate(0.0)"/><path d="M0,0 C35.1,-16.0 29.7,-64 0,-64 C-29.7,-64 -35.1,-16.0 0,0Z" transform="rotate(72.0)"/><path d="M0,0 C35.1,-16.0 29.7,-64 0,-64 C-29.7,-64 -35.1,-16.0 0,0Z" transform="rotate(144.0)"/><path d="M0,0 C35.1,-16.0 29.7,-64 0,-64 C-29.7,-64 -35.1,-16.0 0,0Z" transform="rotate(216.0)"/><path d="M0,0 C35.1,-16.0 29.7,-64 0,-64 C-29.7,-64 -35.1,-16.0 0,0Z" transform="rotate(288.0)"/><path d="M0,0 C27.3,-12.0 23.1,-48 0,-48 C-23.1,-48 -27.3,-12.0 0,0Z" transform="rotate(36.0)"/><path d="M0,0 C27.3,-12.0 23.1,-48 0,-48 C-23.1,-48 -27.3,-12.0 0,0Z" transform="rotate(108.0)"/><path d="M0,0 C27.3,-12.0 23.1,-48 0,-48 C-23.1,-48 -27.3,-12.0 0,0Z" transform="rotate(180.0)"/><path d="M0,0 C27.3,-12.0 23.1,-48 0,-48 C-23.1,-48 -27.3,-12.0 0,0Z" transform="rotate(252.0)"/><path d="M0,0 C27.3,-12.0 23.1,-48 0,-48 C-23.1,-48 -27.3,-12.0 0,0Z" transform="rotate(324.0)"/><path d="M0,0 C19.5,-8.0 16.5,-32 0,-32 C-16.5,-32 -19.5,-8.0 0,0Z" transform="rotate(0.0)"/><path d="M0,0 C19.5,-8.0 16.5,-32 0,-32 C-16.5,-32 -19.5,-8.0 0,0Z" transform="rotate(72.0)"/><path d="M0,0 C19.5,-8.0 16.5,-32 0,-32 C-16.5,-32 -19.5,-8.0 0,0Z" transform="rotate(144.0)"/><path d="M0,0 C19.5,-8.0 16.5,-32 0,-32 C-16.5,-32 -19.5,-8.0 0,0Z" transform="rotate(216.0)"/><path d="M0,0 C19.5,-8.0 16.5,-32 0,-32 C-16.5,-32 -19.5,-8.0 0,0Z" transform="rotate(288.0)"/><circle r="7"/><path d="M0,0 m-4,0 a4,4 0 1,1 4,4" fill="none"/></g>
+    <text x="18" y="246" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="-1.4" fill="#F5EFE6">red roses.</text>
+    <text x="18" y="268" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="700" letter-spacing="2" fill="#E63946" fill-opacity="1">// INTERACTIVE STUDY</text>
+    <rect y="286" width="330" height="44" fill="#F5EFE6"/>
+    <text x="18" y="314" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="0.6" fill="#7A0E0D">OPEN LIVE DEMO</text>
+    <g stroke="#7A0E0D" stroke-width="3" stroke-linecap="square" fill="none"><line x1="296" y1="314" x2="310" y2="300"/><polyline points="298.4,300 310,300 310,311.6"/></g>
+  </g>
+  <rect x="0.75" y="0.75" width="328.5" height="328.5" rx="6" fill="none" stroke="#87100F" stroke-opacity="1" stroke-width="1.5"/>
+</svg>
