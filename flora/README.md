@@ -3,10 +3,8 @@
 </div>
 
 <p align="center">
-  
   A series of interactive botanical studies.<br/>
   Each work lives in its own repository with its own live demo, and this page is the index.
-  
 </p>
 
 <table width="100%">
