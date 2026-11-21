@@ -1,7 +1,5 @@
-
 <div align="center">
-  <h1>Jeremiah Hawthorne</h1>
-  <p><sub>Creative Technologist • Design & Motion Enthusiast</sub></p>
+  <img src="assets/header.svg" alt="Jeremiah Hawthorne — Interactive Canvas & Visual Web Experiments" width="100%" />
 </div>
 
 <br/>
