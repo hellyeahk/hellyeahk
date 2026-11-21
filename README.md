@@ -1,20 +1,27 @@
 <div align="center">
-  <img src="assets/header.svg" alt="Jeremiah Hawthorne — Interactive Canvas & Visual Web Experiments" width="100%" />
+  <img src="./assets/header.svg" alt="jeremiah hawthorne — interactive canvas & visual web experiments" width="100%"/>
+  <a href="https://github.com/hellyeahk">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=3200&pause=900&color=F5EFE6&center=true&vCenter=true&width=680&lines=creative+media+%C2%B7+generative+web+%C2%B7+front-end;ui%2Fux+%C2%B7+motion+graphics+%C2%B7+visual+experiments;interactive+canvas+%26+procedural+flora;building+visual+systems+%40hellyeahk" alt="Typing SVG" />
+  </a>
+  <br/>
+  <img src="https://komarev.com/ghpvc/?username=hellyeahk&color=87100F&style=flat-square&label=VIEWS" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/hellyeahk?color=2A0505&style=flat-square&label=FOLLOWERS" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/hellyeahk?color=2A0505&style=flat-square&label=STARS" alt="Stars" />
 </div>
 
 <br/>
 
-### 01 — Featured Exhibition
+### `01` — featured exhibition
 
 <table width="100%">
   <tr>
-    <td width="58%" align="center">
+    <td width="56%" align="center">
       <a href="https://hellyeahk.github.io/red-roses/">
-        <img src="assets/red-roses.gif" alt="Red Roses Generative Animation" width="100%" />
+        <img src="./assets/red-roses.gif" alt="Red Roses Generative Animation" width="100%" />
       </a>
     </td>
-    <td width="42%" valign="middle">
-      <h3>🌹 Red Roses</h3>
+    <td width="44%" valign="middle">
+      <h3>red roses.</h3>
       <p>
         Interactive procedural rose bloom simulation rendered in real time. Built with layered petal gradients, organic cluster formations, and smooth easing curves.
       </p>
@@ -22,61 +29,46 @@
         <code>HTML5 Canvas</code> <code>CSS3</code> <code>JavaScript</code>
       </p>
       <p>
-        <a href="https://hellyeahk.github.io/red-roses/"><strong>↗ Launch Live Page</strong></a><br/>
-        <a href="https://github.com/hellyeahk/red-roses">View Source Repository</a>
+        <a href="https://hellyeahk.github.io/red-roses/"><strong>↗ launch live page</strong></a> &nbsp;·&nbsp;
+        <a href="https://github.com/hellyeahk/red-roses">source code</a>
       </p>
     </td>
   </tr>
 </table>
 
-<br/>
-
-### 02 — Generative Botanical Index
-
 <table width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
       <a href="https://hellyeahk.github.io/lily_stargazer/">
-        <img src="assets/stargazer-lily.gif" alt="Stargazer Lily" width="100%" />
+        <img src="./assets/stargazer-lily.gif" alt="Stargazer Lily" width="100%" />
       </a>
       <br/>
-      <strong>Stargazer Lily</strong><br/>
-      <sub>Procedural Canvas Bloom • <a href="https://hellyeahk.github.io/lily_stargazer/"><strong>Live Demo ↗</strong></a></sub>
+      <strong>stargazer lily.</strong><br/>
+      <sub>procedural canvas bloom · <a href="https://hellyeahk.github.io/lily_stargazer/"><strong>live demo ↗</strong></a></sub>
     </td>
     <td width="50%" align="center" valign="top">
       <a href="https://hellyeahk.github.io/higanbana/">
-        <img src="assets/higanbana.gif" alt="Higanbana" width="100%" />
+        <img src="./assets/higanbana.gif" alt="Higanbana" width="100%" />
       </a>
       <br/>
-      <strong>Higanbana (Spider Lily)</strong><br/>
-      <sub>Curved Filament Study • <a href="https://hellyeahk.github.io/higanbana/"><strong>Live Demo ↗</strong></a></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="https://hellyeahk.github.io/lotus/">
-        <img src="assets/lotus.gif" alt="Lotus Bloom" width="100%" />
-      </a>
-      <br/>
-      <strong>Sacred Lotus</strong><br/>
-      <sub>Multi-Layer Petal Geometry • <a href="https://hellyeahk.github.io/lotus/"><strong>Live Demo ↗</strong></a></sub>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <a href="https://hellyeahk.github.io/edelweiss/">
-        <img src="assets/edelweiss.gif" alt="Edelweiss" width="100%" />
-      </a>
-      <br/>
-      <strong>Edelweiss</strong><br/>
-      <sub>Cluster Flora Simulation • <a href="https://hellyeahk.github.io/edelweiss/"><strong>Live Demo ↗</strong></a></sub>
+      <strong>higanbana (spider lily).</strong><br/>
+      <sub>curved filament study · <a href="https://hellyeahk.github.io/higanbana/"><strong>live demo ↗</strong></a></sub>
     </td>
   </tr>
 </table>
 
 <br/>
 
-<div align="center">
-  <sub>
-    Design • Motion • Front-End Development &nbsp;·&nbsp;
-    <a href="https://github.com/hellyeahk?tab=repositories">All Repositories ↗</a>
-  </sub>
-</div>
+### `02` — system spec & focus
+
+```javascript
+const jeremiah = {
+  name:     "Jeremiah Hawthorne",
+  handle:   "@hellyeahk",
+  telegram: "@yufanzuao",
+  focus:    "Interactive Canvas & Visual Web Experiments",
+  role:     "Creative media & front-end engineering",
+  loves:    ["UI/UX", "motion graphics", "generative canvas", "CSS animations"],
+  building: ["Vue 3", "React", "full-stack web", "procedural flora"],
+  funFact:  "I'd rather spend an hour on an easing curve than skip it."
+};
