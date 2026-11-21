@@ -35,17 +35,17 @@
 
 <table width="100%">
   <tr>
-    <td width="33.3%" align="center">
+    <td width="33%" align="center" valign="top">
       <a href="https://github.com/hellyeahk?tab=repositories">
         <img src="./assets/exp-002.svg" alt="exp 002" width="100%" />
       </a>
     </td>
-    <td width="33.3%" align="center">
+    <td width="33%" align="center" valign="top">
       <a href="https://github.com/hellyeahk?tab=repositories">
         <img src="./assets/exp-003.svg" alt="exp 003" width="100%" />
       </a>
     </td>
-    <td width="33.3%" align="center">
+    <td width="34%" align="center" valign="top">
       <a href="https://github.com/hellyeahk?tab=repositories">
         <img src="./assets/exp-004.svg" alt="exp 004" width="100%" />
       </a>
@@ -79,7 +79,41 @@
 <br/>
 
 <img src="./assets/section-archive.svg" alt="archive" width="100%" />
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <sub><code>ARC. 01 // GENERATIVE WEB</code></sub><br/>
+      <strong><a href="https://hellyeahk.github.io/red-roses/">red-roses ↗</a></strong><br/>
+      <sub>Real-time HTML5 Canvas procedural bloom &amp; lighting study.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <sub><code>ARC. 02 // FULL REPOSITORY INDEX</code></sub><br/>
+      <strong><a href="https://github.com/hellyeahk?tab=repositories">github.com/hellyeahk ↗</a></strong><br/>
+      <sub>Complete directory of interactive web demos, canvas sketches &amp; UI builds.</sub>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
 <img src="./assets/section-contact.svg" alt="contact" width="100%" />
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="middle">
+      <sub><code>DIRECT MESSAGE</code></sub><br/>
+      <strong><a href="https://t.me/yufanzuao">↗ TELEGRAM — @YUFANZUAO</a></strong>
+    </td>
+    <td width="50%" align="center" valign="middle">
+      <sub><code>GITHUB PROFILE</code></sub><br/>
+      <strong><a href="https://github.com/hellyeahk">↗ GITHUB — @HELLYEAHK</a></strong>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
 <div align="center">
   <a href="https://t.me/yufanzuao">
     <img src="./assets/footer.svg" alt="footer" width="100%" />
