@@ -1,12 +1,21 @@
 <div align="center">
+  <picture>
+  <source media="(max-width: 600px)" srcset="assets/he-m.svg" />
   <img src="assets/header.svg" alt="jeremiah hawthorne" width="100%" />
+</picture>
   <br/>
+  <picture>
+  <source media="(max-width: 600px)" srcset="assets/ti-m.svg" />
   <img src="assets/ticker.svg" alt="interactive canvas, visual web experiments, generative art, UI engineering, procedural flora" width="100%" />
+</picture>
 </div>
 
 <br/>
 
-<img src="assets/section-about.svg" alt="01 about" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/section-a-m.svg" />
+  <img src="assets/section-about.svg" alt="01 about" width="100%" />
+</picture>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/manifesto-m.svg" />
   <img src="assets/manifesto.svg" alt="building interactive visual playgrounds, generative art and tactile web interfaces" width="100%" />
@@ -20,7 +29,10 @@
 
 <br/>
 
-<img src="assets/section-lab.svg" alt="02 lab, visual experiments" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/section-m.svg" />
+  <img src="assets/section-lab.svg" alt="02 lab, visual experiments" width="100%" />
+</picture>
 
 <!--
   Responsive layout without CSS: every tile is ONE image with a fixed pixel width.
@@ -54,7 +66,10 @@
 
 <br/>
 
-<img src="assets/section-stack.svg" alt="03 stack, toolkit" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/section-s-m.svg" />
+  <img src="assets/section-stack.svg" alt="03 stack, toolkit" width="100%" />
+</picture>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/stack-m.svg" />
   <img src="assets/stack.svg" alt="tooling: HTML5, CSS3, JavaScript, TypeScript, Canvas API, Three.js, shaders, Processing, Vue 3, React, Tailwind, After Effects" width="100%" />
@@ -62,7 +77,10 @@
 
 <br/>
 
-<img src="assets/section-stats.svg" alt="04 stats, GitHub data" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/section-s-m.svg" />
+  <img src="assets/section-stats.svg" alt="04 stats, GitHub data" width="100%" />
+</picture>
 <div align="center">
   <img src="assets/snake-strip.svg" alt="contribution graph strip" width="100%" />
   <picture>
@@ -83,13 +101,22 @@
 <br/>
 
 <br>
-<img src="assets/section-contact.svg" alt="05 contact, say hello" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/section-con-m.svg" />
+  <img src="assets/section-contact.svg" alt="05 contact, say hello" width="100%" />
+</picture>
 <div align="center">
   <a href="https://t.me/yufanzuao">
-    <img src="assets/contact-cards.svg" alt="contact on Telegram: @yufanzuao. Repositories on GitHub: @hellyeahk" width="100%" />
+    <picture>
+  <source media="(max-width: 600px)" srcset="assets/contact-c-m.svg" />
+  <img src="assets/contact-cards.svg" alt="contact on Telegram: @yufanzuao. Repositories on GitHub: @hellyeahk" width="100%" />
+</picture>
   </a>
   <br/>
   <a href="https://t.me/yufanzuao">
-    <img src="assets/footer.svg" alt="footer" width="100%" />
+    <picture>
+  <source media="(max-width: 600px)" srcset="assets/fo-m.svg" />
+  <img src="assets/footer.svg" alt="footer" width="100%" />
+</picture>
   </a>
 </div>
