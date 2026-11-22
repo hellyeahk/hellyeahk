@@ -12,6 +12,7 @@
   <img src="assets/manifesto.svg" alt="building interactive visual playgrounds, generative art and tactile web interfaces" width="100%" />
 </picture>
 
+<br/>
 <p align="center">
   <b>Jeremiah Hawthorne</b> · interactive canvas &amp; visual web experiments.<br/>
   Currently: <a href="https://github.com/hellyeahk?tab=repositories&q=topic%3Aflora"><b>flora</b></a>, a series of botanical studies · 6 works live.
