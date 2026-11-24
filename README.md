@@ -1,11 +1,11 @@
 <div align="center">
   <picture>
-  <source media="(max-width: 600px)" srcset="assets/he-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/header-m.svg" />
   <img src="assets/header.svg" alt="jeremiah hawthorne" width="100%" />
 </picture>
   <br/>
   <picture>
-  <source media="(max-width: 600px)" srcset="assets/ti-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/ticker-m.svg" />
   <img src="assets/ticker.svg" alt="interactive canvas, visual web experiments, generative art, UI engineering, procedural flora" width="100%" />
 </picture>
 </div>
@@ -13,7 +13,7 @@
 <br/>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/section-a-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/section-about-m.svg" />
   <img src="assets/section-about.svg" alt="01 about" width="100%" />
 </picture>
 <picture>
@@ -30,7 +30,7 @@
 <br/>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/section-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/section-lab-m.svg" />
   <img src="assets/section-lab.svg" alt="02 lab, visual experiments" width="100%" />
 </picture>
 
@@ -67,7 +67,7 @@
 <br/>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/section-s-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/section-stack-m.svg" />
   <img src="assets/section-stack.svg" alt="03 stack, toolkit" width="100%" />
 </picture>
 <picture>
@@ -78,7 +78,7 @@
 <br/>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/section-s-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/section-stats-m.svg" />
   <img src="assets/section-stats.svg" alt="04 stats, GitHub data" width="100%" />
 </picture>
 <div align="center">
@@ -102,20 +102,20 @@
 
 <br>
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/section-con-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/section-contact-m.svg" />
   <img src="assets/section-contact.svg" alt="05 contact, say hello" width="100%" />
 </picture>
 <div align="center">
   <a href="https://t.me/yufanzuao">
     <picture>
-  <source media="(max-width: 600px)" srcset="assets/contact-c-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/contact-cards-m.svg" />
   <img src="assets/contact-cards.svg" alt="contact on Telegram: @yufanzuao. Repositories on GitHub: @hellyeahk" width="100%" />
 </picture>
   </a>
   <br/>
   <a href="https://t.me/yufanzuao">
     <picture>
-  <source media="(max-width: 600px)" srcset="assets/fo-m.svg" />
+  <source media="(max-width: 600px)" srcset="assets/footer-m.svg" />
   <img src="assets/footer.svg" alt="footer" width="100%" />
 </picture>
   </a>
