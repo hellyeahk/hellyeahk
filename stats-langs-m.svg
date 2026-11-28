@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="306" viewBox="0 0 400 306" role="img" aria-label="Top languages by code size">
+  <defs><radialGradient id="langBg" cx="50%" cy="50%" r="85%"><stop offset="0%" stop-color="#240404"/><stop offset="100%" stop-color="#120202"/></radialGradient></defs>
+  <rect x="1" y="1" width="398" height="304" rx="12" fill="url(#langBg)" stroke="#5C0908" stroke-width="1.5"/>
+  <text x="20" y="34" font-family="'Courier New', Courier, monospace" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#E63946">TOP LANGUAGES // BY CODE SIZE</text>
+<rect x="20.0" y="54" width="184.2" height="20" fill="#F5EFE6"/>
+<rect x="206.2" y="54" width="64.6" height="20" fill="#E63946"/>
+<rect x="272.8" y="54" width="55.6" height="20" fill="#B33A39"/>
+<rect x="330.4" y="54" width="21.8" height="20" fill="#87100F"/>
+<rect x="354.2" y="54" width="10.0" height="20" fill="#5C0908"/>
+<rect x="366.3" y="54" width="13.7" height="20" fill="#8A7D70"/>
+<rect x="20" y="98" width="14" height="14" fill="#F5EFE6" stroke="#F5EFE6" stroke-opacity="0.4"/><text x="44" y="110" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6">JAVASCRIPT</text><text x="380" y="110" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6" fill-opacity="0.8">52.6%</text>
+<rect x="20" y="128" width="14" height="14" fill="#E63946" stroke="#F5EFE6" stroke-opacity="0.4"/><text x="44" y="140" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6">PHP</text><text x="380" y="140" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6" fill-opacity="0.8">18.5%</text>
+<rect x="20" y="158" width="14" height="14" fill="#B33A39" stroke="#F5EFE6" stroke-opacity="0.4"/><text x="44" y="170" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6">CSS</text><text x="380" y="170" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6" fill-opacity="0.8">15.9%</text>
+<rect x="20" y="188" width="14" height="14" fill="#87100F" stroke="#F5EFE6" stroke-opacity="0.4"/><text x="44" y="200" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6">TYPESCRIPT</text><text x="380" y="200" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6" fill-opacity="0.8">6.2%</text>
+<rect x="20" y="218" width="14" height="14" fill="#5C0908" stroke="#F5EFE6" stroke-opacity="0.4"/><text x="44" y="230" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6">HTML</text><text x="380" y="230" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6" fill-opacity="0.8">2.9%</text>
+<rect x="20" y="248" width="14" height="14" fill="#8A7D70" stroke="#F5EFE6" stroke-opacity="0.4"/><text x="44" y="260" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6">OTHER</text><text x="380" y="260" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#F5EFE6" fill-opacity="0.8">3.9%</text>
+  <line x1="1" y1="278" x2="399" y2="278" stroke="#F5EFE6" stroke-opacity="0.14"/>
+  <text x="20" y="296" font-family="'Courier New', Courier, monospace" font-size="10" letter-spacing="1.2" fill="#F5EFE6" fill-opacity="0.5">UPDATED 2026-11-28 19:24 UTC</text>
+</svg>
